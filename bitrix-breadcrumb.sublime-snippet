@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:breadcrumb", "${1:.default}", Array(
+	"START_FROM" => "${2:0}",		// Номер пункта, начиная с которого будет построена навигационная цепочка
+	"PATH" => "${3:}",		// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+	"SITE_ID" => "${4:-}",		// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_breadcrumb</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix breadcrumb</description>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:support.faq.element.detail", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:-}",		// Типы инфоблоков
+	"IBLOCK_ID" => "${3:-}",		// Список инфоблоков
+	"CACHE_TYPE" => "${4:A}",		// Тип кеширования
+	"CACHE_TIME" => "${5:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${6:}",		// 
+	"CACHE_GROUPS" => "${7:Y}",		// Учитывать права доступа
+	"AJAX_MODE" => "${8:N}",		// Включить режим AJAX
+	"SHOW_RATING" => "${9:}",		// Включить рейтинг
+	"RATING_TYPE" => "${10:}",		// Вид кнопок рейтинга
+	"PATH_TO_USER" => "${11:}",		// Шаблон пути к странице пользователя
+	"AJAX_OPTION_JUMP" => "${12:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${13:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${14:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${15:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_support_faq_element_detail</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix support.faq.element.detail</description>
+</snippet>

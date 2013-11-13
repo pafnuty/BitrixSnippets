@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:support.ticket.edit", "${1:.default}", Array(
+	"ID" => ${2:\$_REQUEST["ID"]},		// ID обращения
+	"TICKET_LIST_URL" => "${3:ticket_list.php}",		// Страница списка обращений
+	"MESSAGES_PER_PAGE" => "${4:20}",		// Количество сообщений на одной странице
+	"MESSAGE_MAX_LENGTH" => "${5:70}",		// Максимальная длина неразрывной строки
+	"MESSAGE_SORT_ORDER" => "${6:}",		// Направление для сортировки сообщений в обращении
+	"SET_PAGE_TITLE" => "${7:Y}",		// Устанавливать заголовок страницы
+	"SHOW_COUPON_FIELD" => "${8:N}",		// Показывать поле ввода купона
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_support_ticket_edit</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix support.ticket.edit</description>
+</snippet>

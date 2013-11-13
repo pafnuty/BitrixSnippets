@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:subscribe.news", "${1:.default}", Array(
+	"SITE_ID" => "${2:s1}",		// Сайт
+	"IBLOCK_TYPE" => "${3:news}",		// Тип информационного блока
+	"ID" => "${4:}",		// Код информационного блока
+	"SORT_BY" => "${5:ACTIVE_FROM}",		// Поле для сортировки новостей
+	"SORT_ORDER" => "${6:DESC}",		// Направление сортировки новостей
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_subscribe_news</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix subscribe.news</description>
+</snippet>

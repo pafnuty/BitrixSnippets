@@ -1,0 +1,42 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.top", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Инфоблок
+	"ELEMENT_SORT_FIELD" => "${4:sort}",		// По какому полю сортируем элементы
+	"ELEMENT_SORT_ORDER" => "${5:asc}",		// Порядок сортировки элементов
+	"ELEMENT_SORT_FIELD2" => "${6:id}",		// Поле для второй сортировки элементов
+	"ELEMENT_SORT_ORDER2" => "${7:desc}",		// Порядок второй сортировки элементов
+	"SECTION_URL" => "${8:}",		// URL, ведущий на страницу с содержимым раздела
+	"DETAIL_URL" => "${9:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"BASKET_URL" => "${10:/personal/basket.php}",		// URL, ведущий на страницу с корзиной покупателя
+	"ACTION_VARIABLE" => "${11:action}",		// Название переменной, в которой передается действие
+	"PRODUCT_ID_VARIABLE" => "${12:id}",		// Название переменной, в которой передается код товара для покупки
+	"PRODUCT_QUANTITY_VARIABLE" => "${13:quantity}",		// Название переменной, в которой передается количество товара
+	"PRODUCT_PROPS_VARIABLE" => "${14:prop}",		// Название переменной, в которой передаются характеристики товара
+	"SECTION_ID_VARIABLE" => "${15:SECTION_ID}",		// Название переменной, в которой передается код группы
+	"DISPLAY_COMPARE" => "${16:N}",		// Выводить кнопку сравнения
+	"ELEMENT_COUNT" => "${17:9}",		// Количество выводимых элементов
+	"LINE_ELEMENT_COUNT" => "${18:3}",		// Количество элементов выводимых в одной строке таблицы
+	"PROPERTY_CODE" => "${19:}",		// Свойства
+	"OFFERS_LIMIT" => "${20:5}",		// Максимальное количество предложений для показа (0 - все)
+	"PRICE_CODE" => "${21:}",		// Тип цены
+	"USE_PRICE_COUNT" => "${22:N}",		// Использовать вывод цен с диапазонами
+	"SHOW_PRICE_COUNT" => "${23:1}",		// Выводить цены для количества
+	"PRICE_VAT_INCLUDE" => "${24:Y}",		// Включать НДС в цену
+	"PRODUCT_PROPERTIES" => "${25:}",		// Характеристики товара
+	"USE_PRODUCT_QUANTITY" => "${26:N}",		// Разрешить указание количества товара
+	"CACHE_TYPE" => "${27:A}",		// Тип кеширования
+	"CACHE_TIME" => "${28:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${29:}",		// 
+	"CACHE_GROUPS" => "${30:Y}",		// Учитывать права доступа
+	"HIDE_NOT_AVAILABLE" => "${31:N}",		// Не отображать товары, которых нет на складах
+	"CONVERT_CURRENCY" => "${32:N}",		// Показывать цены в одной валюте
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_top</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.top</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.include", "${1:.default}", Array(
+	"AREA_FILE_SHOW" => "${2:page}",		// Показывать включаемую область
+	"AREA_FILE_SUFFIX" => "${3:inc}",		// Суффикс имени файла включаемой области
+	"EDIT_TEMPLATE" => "${4:}",		// Шаблон области по умолчанию
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_include</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.include</description>
+</snippet>

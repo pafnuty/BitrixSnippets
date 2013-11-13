@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.feedback", "${1:.default}", Array(
+	"USE_CAPTCHA" => "${2:Y}",		// Использовать защиту от автоматических сообщений (CAPTCHA) для неавторизованных пользователей
+	"OK_TEXT" => "${3:Спасибо, ваше сообщение принято.}",		// Сообщение, выводимое пользователю после отправки
+	"EMAIL_TO" => "${4:sale@demo36.info-expert.ru}",		// E-mail, на который будет отправлено письмо
+	"REQUIRED_FIELDS" => "${5:}",		// Обязательные поля для заполнения
+	"EVENT_MESSAGE_ID" => "${6:}",		// Почтовые шаблоны для отправки письма
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_feedback</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.feedback</description>
+</snippet>

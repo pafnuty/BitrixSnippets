@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.profile", "${1:.default}", Array(
+	"SET_TITLE" => "${2:Y}",		// Устанавливать заголовок страницы
+	"AJAX_MODE" => "${3:N}",		// Включить режим AJAX
+	"USER_PROPERTY" => "${4:}",		// Показывать доп. свойства
+	"SEND_INFO" => "${5:N}",		// Генерировать почтовое событие
+	"CHECK_RIGHTS" => "${6:N}",		// Проверять права доступа
+	"AJAX_OPTION_JUMP" => "${7:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${8:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${9:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${10:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_profile</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.profile</description>
+</snippet>

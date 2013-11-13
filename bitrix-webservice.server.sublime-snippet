@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:webservice.server", "${1:.default}", Array(
+	"WEBSERVICE_NAME" => "${2:WebService EndPoint: Bitrix}",		// Название веб-сервиса
+	"WEBSERVICE_MODULE" => "${3:}",		// Модуль веб-сервис
+	"WEBSERVICE_CLASS" => "${4:CGenericWSStub}",		// Конфигурирующий класс
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_webservice_server</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix webservice.server</description>
+</snippet>

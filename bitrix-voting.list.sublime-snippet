@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:voting.list", "${1:.default}", Array(
+	"CHANNEL_SID" => "${2:}",		// Группа опросов
+	"VOTE_FORM_TEMPLATE" => "${3:vote_new.php?VOTE_ID=#VOTE_ID#}",		// Страница для вывода пустой формы опроса
+	"VOTE_RESULT_TEMPLATE" => "${4:vote_result.php?VOTE_ID=#VOTE_ID#}",		// Страница для вывода диаграмм результатов опроса
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_voting_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix voting.list</description>
+</snippet>

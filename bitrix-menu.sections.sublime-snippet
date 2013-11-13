@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:menu.sections", "${1:.default}", Array(
+	"IS_SEF" => "${2:N}",		// Включить режим совместимости с поддержкой ЧПУ
+	"ID" => ${3:\$_REQUEST["ID"]},		// ID элемента для подсветки пункта меню
+	"IBLOCK_TYPE" => "${4:catalog}",		// Тип информационного блока
+	"IBLOCK_ID" => "${5:1}",		// Код информационного блока
+	"SECTION_URL" => "${6:}",		// URL, ведущий на страницу с содержимым раздела
+	"DEPTH_LEVEL" => "${7:1}",		// Сколько уровней вложенности выводить
+	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
+	"CACHE_TIME" => "${9:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${10:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_menu_sections</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix menu.sections</description>
+</snippet>

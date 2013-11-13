@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:map.yandex.view", "${1:.default}", Array(
+	"INIT_MAP_TYPE" => "${2:MAP}",		// Стартовый тип карты
+	"MAP_DATA" => ${3:a:3:s:10:"yandex_lat";s:7:"55.7383";s:10:"yandex_lon";s:7:"37.5946";s:12:"yandex_scale";i:10;},		// Данные, выводимые на карте
+	"MAP_WIDTH" => "${4:600}",		// Ширина карты
+	"MAP_HEIGHT" => "${5:500}",		// Высота карты
+	"CONTROLS" => "${6:}",		// Элементы управления
+	"OPTIONS" => "${7:}",		// Настройки
+	"MAP_ID" => "${8:}",		// Идентификатор карты
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_map_yandex_view</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix map.yandex.view</description>
+</snippet>

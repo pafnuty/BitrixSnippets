@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:event_list", "${1:.default}", Array(
+	"PAGE_NUM" => "${2:10}",		// Количество отображаемых записей на странице
+	"FILTER" => "${3:}",		// Элементы в фильтре
+	"USER_PATH" => "${4:#SITE_ID#company/personal/user/#user_id#/}",		// Шаблон пути к странице пользователя
+	"FORUM_PATH" => "${5:#SITE_ID#community/forum/forum#FORUM_ID#/}",		// Шаблон пути к форуму
+	"FORUM_TOPIC_PATH" => "${6:#SITE_ID#community/forum/forum#FORUM_ID#/topic#TOPIC_ID#/}",		// Шаблон пути к теме форума
+	"FORUM_MESSAGE_PATH" => "${7:#SITE_ID#community/forum/messages/forum#FORUM_ID#/topic#TOPIC_ID#/message#MESSAGE_ID#/#message#MESSAGE_ID#}",		// Шаблон пути к сообщению форума
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_event_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix event_list</description>
+</snippet>

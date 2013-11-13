@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.clock", "${1:.default}", Array(
+	"INPUT_ID" => "${2:}",		// ID поля ввода
+	"INPUT_NAME" => "${3:}",		// Имя поля ввода
+	"INPUT_TITLE" => "${4:}",		// Всплывающая подсказка на поле ввода
+	"INIT_TIME" => "${5:}",		// Стартовое время (HH:MM)
+	"STEP" => "${6:5}",		// Минимальный шаг для задания времени, в минутах
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_clock</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.clock</description>
+</snippet>

@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.store", "${1:.default}", Array(
+	"SEF_MODE" => "${2:N}",		// Включить поддержку ЧПУ
+	"PHONE" => "${3:N}",		// Отображать телефон
+	"SCHEDULE" => "${4:N}",		// Отображать график работы
+	"SET_TITLE" => "${5:Y}",		// Устанавливать заголовок страницы
+	"TITLE" => "${6:Список складов с подробной информацией}",		// Заголовок страницы
+	"MAP_TYPE" => "${7:Yandex}",		// Тип используемой карты
+	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
+	"CACHE_TIME" => "${9:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${10:}",		// 
+	"SEF_FOLDER" => "${11:}",		// Каталог ЧПУ (относительно корня сайта)
+	"SEF_URL_TEMPLATES_liststores" => "${12:index.php}",		// Список складов
+	"SEF_URL_TEMPLATES_element" => "${13:#store_id#}",		// Детально о складе
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_store</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.store</description>
+</snippet>

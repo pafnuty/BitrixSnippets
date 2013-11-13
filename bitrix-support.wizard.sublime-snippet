@@ -1,0 +1,32 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:support.wizard", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:news}",		// Тип инфоблока
+	"IBLOCK_ID" => ${3:\$_REQUEST["ID"]},		// Информационный блок
+	"PROPERTY_FIELD_TYPE" => "${4:}",		// Свойство, в котором хранится тип вопроса
+	"PROPERTY_FIELD_VALUES" => "${5:}",		// Множественное свойство, в котором хранятся значения выпадающего списка
+	"AJAX_MODE" => "${6:N}",		// Включить режим AJAX
+	"INCLUDE_IBLOCK_INTO_CHAIN" => "${7:Y}",		// Добавлять разделы мастера в навигационную цепочку
+	"TICKETS_PER_PAGE" => "${8:50}",		// Количество обращений на одной странице
+	"MESSAGES_PER_PAGE" => "${9:20}",		// Количество сообщений на одной странице
+	"MESSAGE_MAX_LENGTH" => "${10:70}",		// Максимальная длина неразрывной строки
+	"MESSAGE_SORT_ORDER" => "${11:}",		// Направление для сортировки сообщений в обращении
+	"SET_PAGE_TITLE" => "${12:Y}",		// Устанавливать заголовок страницы
+	"TEMPLATE_TYPE" => "${13:}",		// Шаблон мастера
+	"SHOW_RESULT" => "${14:Y}",		// Показать результат работы мастера
+	"SHOW_COUPON_FIELD" => "${15:N}",		// Показывать поле ввода купона
+	"SECTIONS_TO_CATEGORIES" => "${16:}",		// Включить привязки
+	"SET_SHOW_USER_FIELD" => "${17:}",		// Показывать пользовательские поля
+	"VARIABLE_ALIASES_ID" => "${18:ID}",		// Идентификатор обращения
+	"AJAX_OPTION_JUMP" => "${19:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${20:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${21:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${22:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_support_wizard</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix support.wizard</description>
+</snippet>

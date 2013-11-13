@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:statistic.table", "${1:.default}", Array(
+	"CACHE_TYPE" => "${2:A}",		// Тип кеширования
+	"CACHE_TIME" => "${3:20}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${4:}",		// 
+	"CACHE_FOR_ADMIN" => "${5:N}",		// Кешировать для администраторов
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_statistic_table</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix statistic.table</description>
+</snippet>

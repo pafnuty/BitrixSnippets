@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.store.list", "${1:.default}", Array(
+	"PHONE" => "${2:N}",		// Отображать телефон
+	"SCHEDULE" => "${3:N}",		// Отображать график работы
+	"PATH_TO_ELEMENT" => "${4:store/#store_id#}",		// Шаблон пути к каталогу STORE(относительно корня)
+	"MAP_TYPE" => "${5:Yandex}",		// Тип карты
+	"SET_TITLE" => "${6:Y}",		// Устанавливать заголовок страницы
+	"CACHE_TYPE" => "${7:A}",		// Тип кеширования
+	"CACHE_TIME" => "${8:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${9:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_store_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.store.list</description>
+</snippet>

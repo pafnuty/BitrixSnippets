@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:subscribe.simple", "${1:.default}", Array(
+	"AJAX_MODE" => "${2:N}",		// Включить режим AJAX
+	"SHOW_HIDDEN" => "${3:N}",		// Показать скрытые рубрики подписки
+	"CACHE_TYPE" => "${4:A}",		// Тип кеширования
+	"CACHE_TIME" => "${5:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${6:}",		// 
+	"SET_TITLE" => "${7:Y}",		// Устанавливать заголовок страницы
+	"AJAX_OPTION_JUMP" => "${8:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${9:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${10:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${11:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_subscribe_simple</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix subscribe.simple</description>
+</snippet>

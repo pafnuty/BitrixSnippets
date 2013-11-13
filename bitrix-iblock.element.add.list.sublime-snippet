@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:iblock.element.add.list", "${1:.default}", Array(
+	"SEF_MODE" => "${2:N}",		// Включить поддержку ЧПУ
+	"IBLOCK_TYPE" => "${3:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${4:}",		// Инфоблок
+	"GROUPS" => "${5:}",		// Группы пользователей, имеющие право на добавление/редактирование
+	"STATUS" => "${6:}",		// Редактирование возможно для статуса
+	"EDIT_URL" => "${7:}",		// Страница редактирования элемента
+	"ELEMENT_ASSOC" => "${8:CREATED_BY}",		// Привязка к пользователю
+	"ALLOW_EDIT" => "${9:Y}",		// Разрешать редактирование
+	"ALLOW_DELETE" => "${10:Y}",		// Разрешать удаление
+	"NAV_ON_PAGE" => "${11:10}",		// Количество элементов на странице
+	"MAX_USER_ENTRIES" => "${12:100000}",		// Ограничить кол-во элементов для одного пользователя
+	"SEF_FOLDER" => "${13:}",		// Каталог ЧПУ (относительно корня сайта)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_iblock_element_add_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix iblock.element.add.list</description>
+</snippet>

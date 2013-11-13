@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Инфоблок
+	"SECTION_ID" => ${4:\$_REQUEST["SECTION_ID"]},		// ID раздела
+	"SECTION_CODE" => "${5:}",		// Код раздела
+	"SECTION_URL" => "${6:}",		// URL, ведущий на страницу с содержимым раздела
+	"COUNT_ELEMENTS" => "${7:Y}",		// Показывать количество элементов в разделе
+	"TOP_DEPTH" => "${8:2}",		// Максимальная отображаемая глубина разделов
+	"SECTION_FIELDS" => "${9:}",		// Поля разделов
+	"SECTION_USER_FIELDS" => "${10:}",		// Свойства разделов
+	"ADD_SECTIONS_CHAIN" => "${11:Y}",		// Включать раздел в цепочку навигации
+	"CACHE_TYPE" => "${12:A}",		// Тип кеширования
+	"CACHE_TIME" => "${13:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${14:}",		// 
+	"CACHE_GROUPS" => "${15:Y}",		// Учитывать права доступа
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_section_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.section.list</description>
+</snippet>

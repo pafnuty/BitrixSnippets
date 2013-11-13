@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:iblock.wizard", "${1:.default}", Array(
+	"AJAX_MODE" => "${2:N}",		// Включить режим AJAX
+	"IBLOCK_TYPE" => "${3:news}",		// Тип инфоблока
+	"IBLOCK_ID" => ${4:\$_REQUEST["ID"]},		// Информационный блок
+	"PROPERTY_FIELD_TYPE" => "${5:}",		// Свойство, в котором хранится тип вопроса
+	"PROPERTY_FIELD_VALUES" => "${6:}",		// Множественное свойство, в котором хранятся значения выпадающего списка
+	"BACK_URL" => "${7:ticket_list.php}",		// Страница, с которой пришли на мастер (для кнопки "Назад", может быть пустое)
+	"NEXT_URL" => "${8:ticket_edit.php}",		// Страница с формой редактирования сообщения
+	"INCLUDE_IBLOCK_INTO_CHAIN" => "${9:Y}",		// Добавлять разделы мастера в навигационную цепочку
+	"CACHE_TYPE" => "${10:A}",		// Тип кеширования
+	"CACHE_TIME" => "${11:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${12:}",		// 
+	"AJAX_OPTION_JUMP" => "${13:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${14:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${15:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${16:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_iblock_wizard</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix iblock.wizard</description>
+</snippet>

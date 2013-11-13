@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:support.ticket", "${1:.default}", Array(
+	"SEF_MODE" => "${2:N}",		// Включить поддержку ЧПУ
+	"TICKETS_PER_PAGE" => "${3:50}",		// Количество обращений на одной странице
+	"MESSAGES_PER_PAGE" => "${4:20}",		// Количество сообщений на одной странице
+	"MESSAGE_MAX_LENGTH" => "${5:70}",		// Максимальная длина неразрывной строки
+	"MESSAGE_SORT_ORDER" => "${6:}",		// Направление для сортировки сообщений в обращении
+	"SET_PAGE_TITLE" => "${7:Y}",		// Устанавливать заголовок страницы
+	"SHOW_COUPON_FIELD" => "${8:N}",		// Показывать поле ввода купона
+	"SET_SHOW_USER_FIELD" => "${9:}",		// Показывать пользовательские поля
+	"VARIABLE_ALIASES_ID" => "${10:ID}",		// Идентификатор обращения
+	"SEF_FOLDER" => "${11:}",		// Каталог ЧПУ (относительно корня сайта)
+	"SEF_URL_TEMPLATES_ticket_list" => "${12:index.php}",		// Список обращений
+	"SEF_URL_TEMPLATES_ticket_edit" => "${13:#ID#.php}",		// Редактирование обращения
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_support_ticket</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix support.ticket</description>
+</snippet>

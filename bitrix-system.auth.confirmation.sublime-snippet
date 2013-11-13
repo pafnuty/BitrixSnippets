@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:system.auth.confirmation", "${1:.default}", Array(
+	"USER_ID" => "${2:confirm_user_id}",		// Название переменной, в которой передается ID пользователя
+	"CONFIRM_CODE" => "${3:confirm_code}",		// Название переменной, в которой передается код подтверждения
+	"LOGIN" => "${4:login}",		// Название переменной, в которой передается логин пользователя
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_system_auth_confirmation</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix system.auth.confirmation</description>
+</snippet>

@@ -1,0 +1,48 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.sections.top", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Инфоблок
+	"SECTION_FIELDS" => "${4:}",		// Поля разделов
+	"SECTION_USER_FIELDS" => "${5:}",		// Свойства разделов
+	"SECTION_SORT_FIELD" => "${6:sort}",		// По какому полю сортируем разделы
+	"SECTION_SORT_ORDER" => "${7:asc}",		// Порядок сортировки разделов
+	"ELEMENT_SORT_FIELD" => "${8:sort}",		// По какому полю сортируем элементы
+	"ELEMENT_SORT_ORDER" => "${9:asc}",		// Порядок сортировки элементов
+	"ELEMENT_SORT_FIELD2" => "${10:id}",		// Поле для второй сортировки элементов
+	"ELEMENT_SORT_ORDER2" => "${11:desc}",		// Порядок второй сортировки элементов
+	"FILTER_NAME" => "${12:arrFilter}",		// Имя массива со значениями фильтра для фильтрации элементов
+	"SECTION_URL" => "${13:}",		// URL, ведущий на страницу с содержимым раздела
+	"DETAIL_URL" => "${14:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"BASKET_URL" => "${15:/personal/basket.php}",		// URL, ведущий на страницу с корзиной покупателя
+	"ACTION_VARIABLE" => "${16:action}",		// Название переменной, в которой передается действие
+	"PRODUCT_ID_VARIABLE" => "${17:id}",		// Название переменной, в которой передается код товара для покупки
+	"PRODUCT_QUANTITY_VARIABLE" => "${18:quantity}",		// Название переменной, в которой передается количество товара
+	"PRODUCT_PROPS_VARIABLE" => "${19:prop}",		// Название переменной, в которой передаются характеристики товара
+	"SECTION_ID_VARIABLE" => "${20:SECTION_ID}",		// Название переменной, в которой передается код группы
+	"DISPLAY_COMPARE" => "${21:N}",		// Выводить кнопку сравнения
+	"SECTION_COUNT" => "${22:20}",		// Максимальное количество выводимых разделов
+	"ELEMENT_COUNT" => "${23:9}",		// Максимальное количество элементов, выводимых в каждом разделе
+	"LINE_ELEMENT_COUNT" => "${24:3}",		// Количество элементов, выводимых в одной строке таблицы
+	"PROPERTY_CODE" => "${25:}",		// Свойства
+	"PRICE_CODE" => "${26:}",		// Тип цены
+	"USE_PRICE_COUNT" => "${27:N}",		// Использовать вывод цен с диапазонами
+	"SHOW_PRICE_COUNT" => "${28:1}",		// Выводить цены для количества
+	"PRICE_VAT_INCLUDE" => "${29:Y}",		// Включать НДС в цену
+	"PRODUCT_PROPERTIES" => "${30:}",		// Характеристики товара
+	"USE_PRODUCT_QUANTITY" => "${31:N}",		// Разрешить указание количества товара
+	"CACHE_TYPE" => "${32:A}",		// Тип кеширования
+	"CACHE_TIME" => "${33:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${34:}",		// 
+	"CACHE_FILTER" => "${35:N}",		// Кешировать при установленном фильтре
+	"CACHE_GROUPS" => "${36:Y}",		// Учитывать права доступа
+	"HIDE_NOT_AVAILABLE" => "${37:N}",		// Не отображать товары, которых нет на складах
+	"CONVERT_CURRENCY" => "${38:N}",		// Показывать цены в одной валюте
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_sections_top</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.sections.top</description>
+</snippet>

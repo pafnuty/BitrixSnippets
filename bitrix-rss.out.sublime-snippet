@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:rss.out", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип информационного блока
+	"IBLOCK_ID" => "${3:}",		// Информационный блок
+	"SECTION_ID" => "${4:}",		// Раздел
+	"SECTION_CODE" => "${5:}",		// Код раздела
+	"NUM_NEWS" => "${6:20}",		// Количество новостей для экспорта
+	"NUM_DAYS" => "${7:30}",		// Количество дней для экспорта
+	"RSS_TTL" => "${8:60}",		// Время жизни (в минутах)
+	"YANDEX" => "${9:N}",		// Экспортировать в диалект Яндекса
+	"SORT_BY1" => "${10:ACTIVE_FROM}",		// Поле для первой сортировки новостей
+	"SORT_ORDER1" => "${11:DESC}",		// Направление для первой сортировки новостей
+	"SORT_BY2" => "${12:SORT}",		// Поле для второй сортировки новостей
+	"SORT_ORDER2" => "${13:ASC}",		// Направление для второй сортировки новостей
+	"FILTER_NAME" => "${14:}",		// Фильтр
+	"CACHE_TYPE" => "${15:A}",		// Тип кеширования
+	"CACHE_TIME" => "${16:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${17:}",		// 
+	"CACHE_FILTER" => "${18:N}",		// Кешировать при установленном фильтре
+	"CACHE_GROUPS" => "${19:Y}",		// Учитывать права доступа
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_rss_out</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix rss.out</description>
+</snippet>

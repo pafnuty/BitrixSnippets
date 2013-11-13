@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:voting.form", "${1:.default}", Array(
+	"VOTE_ID" => ${2:\$_REQUEST["VOTE_ID"]},		// Идентификатор опроса
+	"VOTE_RESULT_TEMPLATE" => "${3:vote_result.php?VOTE_ID=#VOTE_ID#}",		// Страница для вывода диаграмм результатов опроса
+	"CACHE_TYPE" => "${4:A}",		// Тип кеширования
+	"CACHE_TIME" => "${5:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${6:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_voting_form</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix voting.form</description>
+</snippet>

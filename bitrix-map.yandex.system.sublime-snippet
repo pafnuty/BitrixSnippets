@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:map.yandex.system", "${1:.default}", Array(
+	"KEY" => "${2:}",		// Ключ доступа
+	"INIT_MAP_TYPE" => "${3:MAP}",		// Стартовый тип карты
+	"MAP_WIDTH" => "${4:600}",		// Ширина карты
+	"MAP_HEIGHT" => "${5:500}",		// Высота карты
+	"CONTROLS" => "${6:}",		// Элементы управления
+	"OPTIONS" => "${7:}",		// Настройки
+	"MAP_ID" => "${8:}",		// Идентификатор карты
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_map_yandex_system</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix map.yandex.system</description>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:news.line", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:news}",		// Тип информационного блока
+	"IBLOCKS" => "${3:}",		// Код информационного блока
+	"NEWS_COUNT" => "${4:20}",		// Количество новостей на странице
+	"FIELD_CODE" => "${5:}",		// Поля
+	"SORT_BY1" => "${6:ACTIVE_FROM}",		// Поле для первой сортировки новостей
+	"SORT_ORDER1" => "${7:DESC}",		// Направление для первой сортировки новостей
+	"SORT_BY2" => "${8:SORT}",		// Поле для второй сортировки новостей
+	"SORT_ORDER2" => "${9:ASC}",		// Направление для второй сортировки новостей
+	"DETAIL_URL" => "${10:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"ACTIVE_DATE_FORMAT" => "${11:d.m.Y}",		// Формат показа даты
+	"CACHE_TYPE" => "${12:A}",		// Тип кеширования
+	"CACHE_TIME" => "${13:300}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${14:}",		// 
+	"CACHE_GROUPS" => "${15:Y}",		// Учитывать права доступа
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_news_line</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix news.line</description>
+</snippet>

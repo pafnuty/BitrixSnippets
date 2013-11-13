@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.main", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_URL" => "${3:}",		// URL, ведущий на страницу со списком секций
+	"CACHE_TYPE" => "${4:A}",		// Тип кеширования
+	"CACHE_TIME" => "${5:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${6:}",		// 
+	"CACHE_GROUPS" => "${7:Y}",		// Учитывать права доступа
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_main</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.main</description>
+</snippet>

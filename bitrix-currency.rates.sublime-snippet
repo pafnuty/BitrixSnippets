@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:currency.rates", "${1:.default}", Array(
+	"arrCURRENCY_FROM" => "${2:}",		// Массив "исходных" валют для перевода
+	"CURRENCY_BASE" => "${3:}",		// Валюта, к которой приводятся "исходные" валюты
+	"RATE_DAY" => "${4:}",		// День, на который показывать курсы валют (в формате 'Y-m-d')
+	"SHOW_CB" => "${5:N}",		// Показывать курс валют с ЦБ РФ
+	"CACHE_TYPE" => "${6:A}",		// Тип кеширования
+	"CACHE_TIME" => "${7:86400}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${8:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_currency_rates</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix currency.rates</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:support.ticket.list", "${1:.default}", Array(
+	"TICKET_EDIT_TEMPLATE" => "${2:ticket_edit.php?ID=#ID#}",		// Страница редактирования обращения
+	"TICKETS_PER_PAGE" => "${3:50}",		// Количество обращений на одной странице
+	"SET_PAGE_TITLE" => "${4:Y}",		// Устанавливать заголовок страницы
+	"SET_SHOW_USER_FIELD" => "${5:}",		// Показывать пользовательские поля
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_support_ticket_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix support.ticket.list</description>
+</snippet>

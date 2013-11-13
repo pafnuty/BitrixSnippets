@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:system.auth.form", "${1:.default}", Array(
+	"REGISTER_URL" => "${2:}",		// Страница регистрации
+	"FORGOT_PASSWORD_URL" => "${3:}",		// Страница забытого пароля
+	"PROFILE_URL" => "${4:}",		// Страница профиля
+	"SHOW_ERRORS" => "${5:N}",		// Показывать ошибки
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_system_auth_form</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix system.auth.form</description>
+</snippet>

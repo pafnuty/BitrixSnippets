@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:socserv.auth.split", "${1:.default}", Array(
+	"SHOW_PROFILES" => "${2:Y}",		// Показывать объединенные профили
+	"ALLOW_DELETE" => "${3:Y}",		// Разрешить удалять объединенные профили
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_socserv_auth_split</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix socserv.auth.split</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.register", "${1:.default}", Array(
+	"SHOW_FIELDS" => "${2:}",		// Поля, которые показывать в форме
+	"REQUIRED_FIELDS" => "${3:}",		// Поля, обязательные для заполнения
+	"AUTH" => "${4:Y}",		// Автоматически авторизовать пользователей
+	"USE_BACKURL" => "${5:Y}",		// Отправлять пользователя по обратной ссылке, если она есть
+	"SUCCESS_PAGE" => "${6:}",		// Страница окончания регистрации
+	"SET_TITLE" => "${7:Y}",		// Устанавливать заголовок страницы
+	"USER_PROPERTY" => "${8:}",		// Показывать доп. свойства
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_register</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.register</description>
+</snippet>

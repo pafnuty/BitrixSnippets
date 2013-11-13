@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:voting.current", "${1:.default}", Array(
+	"CHANNEL_SID" => "${2:}",		// Группа опросов
+	"VOTE_ID" => "${3:}",		// ID опроса
+	"VOTE_ALL_RESULTS" => "${4:N}",		// Показывать все результаты
+	"CACHE_TYPE" => "${5:A}",		// Тип кеширования
+	"CACHE_TIME" => "${6:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${7:}",		// 
+	"AJAX_MODE" => "${8:N}",		// Включить режим AJAX
+	"AJAX_OPTION_JUMP" => "${9:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${10:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${11:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${12:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_voting_current</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix voting.current</description>
+</snippet>

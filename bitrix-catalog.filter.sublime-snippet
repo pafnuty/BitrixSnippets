@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.filter", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Инфоблок
+	"FILTER_NAME" => "${4:arrFilter}",		// Имя выходящего массива для фильтрации
+	"FIELD_CODE" => "${5:}",		// Поля
+	"PROPERTY_CODE" => "${6:}",		// Свойства
+	"PRICE_CODE" => "${7:}",		// Тип цены
+	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
+	"CACHE_TIME" => "${9:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${10:}",		// 
+	"CACHE_GROUPS" => "${11:Y}",		// Учитывать права доступа
+	"LIST_HEIGHT" => "${12:5}",		// Высота списков множественного выбора
+	"TEXT_WIDTH" => "${13:20}",		// Ширина однострочных текстовых полей ввода
+	"NUMBER_WIDTH" => "${14:5}",		// Ширина полей ввода для числовых интервалов
+	"SAVE_IN_SESSION" => "${15:N}",		// Сохранять установки фильтра в сессии пользователя
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_filter</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.filter</description>
+</snippet>

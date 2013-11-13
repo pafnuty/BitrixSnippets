@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:rss.show", "${1:.default}", Array(
+	"URL" => "${2:}",		// Адрес ленты rss
+	"OUT_CHANNEL" => "${3:N}",		// Находятся ли новости вне канала (обычно нет)
+	"NUM_NEWS" => "${4:10}",		// Количество новостей для показа (0 - не ограничивать)
+	"PROCESS" => "${5:NONE}",		// Обработка содержимого rss канала
+	"CACHE_TYPE" => "${6:A}",		// Тип кеширования
+	"CACHE_TIME" => "${7:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${8:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_rss_show</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix rss.show</description>
+</snippet>

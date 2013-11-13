@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:webservice.checkauth", "${1:.default}", Array(
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_webservice_checkauth</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix webservice.checkauth</description>
+</snippet>

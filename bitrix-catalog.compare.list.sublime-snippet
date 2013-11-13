@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.compare.list", "${1:.default}", Array(
+	"AJAX_MODE" => "${2:N}",		// Включить режим AJAX
+	"IBLOCK_TYPE" => "${3:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${4:}",		// Инфоблок
+	"DETAIL_URL" => "${5:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"COMPARE_URL" => "${6:compare.php}",		// URL страницы с таблицей сравнения
+	"NAME" => "${7:CATALOG_COMPARE_LIST}",		// Уникальное имя для списка сравнения
+	"AJAX_OPTION_JUMP" => "${8:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${9:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${10:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${11:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_compare_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.compare.list</description>
+</snippet>

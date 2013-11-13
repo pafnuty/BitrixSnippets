@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.user.link", "${1:.default}", Array(
+	"CACHE_TYPE" => "${2:A}",		// Тип кеширования
+	"CACHE_TIME" => "${3:7200}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${4:}",		// 
+	"ID" => "${5:}",		// Идентификатор пользователя
+	"NAME_TEMPLATE" => "${6:}",		// Отображение имени
+	"SHOW_LOGIN" => "${7:Y}",		// Показывать логин, если не задано имя
+	"USE_THUMBNAIL_LIST" => "${8:Y}",		// Отображать личное фото в списке
+	"SHOW_FIELDS" => "${9:}",		// Показывать поля пользователя
+	"USER_PROPERTY" => "${10:}",		// Показывать доп. свойства
+	"PATH_TO_SONET_USER_PROFILE" => "${11:}",		// Шаблон пути к странице пользователя
+	"PROFILE_URL" => "${12:}",		// Путь к странице пользователя
+	"DATE_TIME_FORMAT" => "${13:d.m.Y H:i:s}",		// Формат показа даты и времени
+	"SHOW_YEAR" => "${14:Y}",		// Показывать год рождения
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_user_link</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.user.link</description>
+</snippet>

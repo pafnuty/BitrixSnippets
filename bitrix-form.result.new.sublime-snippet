@@ -1,0 +1,26 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:form.result.new", "${1:.default}", Array(
+	"SEF_MODE" => "${2:N}",		// Включить поддержку ЧПУ
+	"WEB_FORM_ID" => ${3:\$_REQUEST[WEB_FORM_ID]},		// ID веб-формы
+	"LIST_URL" => "${4:result_list.php}",		// Страница со списком результатов
+	"EDIT_URL" => "${5:result_edit.php}",		// Страница редактирования результата
+	"SUCCESS_URL" => "${6:}",		// Страница с сообщением об успешной отправке
+	"CHAIN_ITEM_TEXT" => "${7:}",		// Название дополнительного пункта в навигационной цепочке
+	"CHAIN_ITEM_LINK" => "${8:}",		// Ссылка на дополнительном пункте в навигационной цепочке
+	"IGNORE_CUSTOM_TEMPLATE" => "${9:N}",		// Игнорировать свой шаблон
+	"USE_EXTENDED_ERRORS" => "${10:N}",		// Использовать расширенный вывод сообщений об ошибках
+	"CACHE_TYPE" => "${11:A}",		// Тип кеширования
+	"CACHE_TIME" => "${12:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${13:}",		// 
+	"VARIABLE_ALIASES_WEB_FORM_ID" => "${14:WEB_FORM_ID}",		// ID веб-формы
+	"VARIABLE_ALIASES_RESULT_ID" => "${15:RESULT_ID}",		// ID результата
+	"SEF_FOLDER" => "${16:}",		// Каталог ЧПУ (относительно корня сайта)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_form_result_new</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix form.result.new</description>
+</snippet>

@@ -1,0 +1,39 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.compare.result", "${1:.default}", Array(
+	"AJAX_MODE" => "${2:N}",		// Включить режим AJAX
+	"NAME" => "${3:CATALOG_COMPARE_LIST}",		// Уникальное имя для списка сравнения
+	"IBLOCK_TYPE" => "${4:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${5:}",		// Инфоблок
+	"FIELD_CODE" => "${6:}",		// Поля
+	"PROPERTY_CODE" => "${7:}",		// Свойства
+	"ELEMENT_SORT_FIELD" => "${8:sort}",		// По какому полю сортируем элементы
+	"ELEMENT_SORT_ORDER" => "${9:asc}",		// Порядок сортировки элементов
+	"DETAIL_URL" => "${10:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"BASKET_URL" => "${11:/personal/basket.php}",		// URL, ведущий на страницу с корзиной покупателя
+	"ACTION_VARIABLE" => "${12:action}",		// Название переменной, в которой передается действие
+	"PRODUCT_ID_VARIABLE" => "${13:id}",		// Название переменной, в которой передается код товара для покупки
+	"SECTION_ID_VARIABLE" => "${14:SECTION_ID}",		// Название переменной, в которой передается код группы
+	"PRICE_CODE" => "${15:}",		// Тип цены
+	"USE_PRICE_COUNT" => "${16:N}",		// Использовать вывод цен с диапазонами
+	"SHOW_PRICE_COUNT" => "${17:1}",		// Выводить цены для количества
+	"PRICE_VAT_INCLUDE" => "${18:Y}",		// Включать НДС в цену
+	"DISPLAY_ELEMENT_SELECT_BOX" => "${19:N}",		// Выводить список элементов инфоблока
+	"ELEMENT_SORT_FIELD_BOX" => "${20:name}",		// По какому полю сортируем список элементов
+	"ELEMENT_SORT_ORDER_BOX" => "${21:asc}",		// Порядок сортировки списка элементов
+	"ELEMENT_SORT_FIELD_BOX2" => "${22:id}",		// Поле для второй сортировки списка элементов
+	"ELEMENT_SORT_ORDER_BOX2" => "${23:desc}",		// Порядок второй сортировки списка элементов
+	"HIDE_NOT_AVAILABLE" => "${24:N}",		// Не отображать в списке товары, которых нет на складах
+	"CONVERT_CURRENCY" => "${25:N}",		// Показывать цены в одной валюте
+	"AJAX_OPTION_JUMP" => "${26:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${27:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${28:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${29:}",		// Дополнительный идентификатор
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_compare_result</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.compare.result</description>
+</snippet>

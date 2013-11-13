@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:iblock.tv", "${1:.default}", Array(
+	"DEFAULT_SMALL_IMAGE" => "${2:/bitrix/components/bitrix/iblock.tv/templates/.default/images/default_small.png}",		// Маленькое изображение по умолчанию
+	"DEFAULT_BIG_IMAGE" => "${3:/bitrix/components/bitrix/iblock.tv/templates/.default/images/default_big.png}",		// Большое изображение по умолчанию
+	"SORT_BY1" => "${4:ACTIVE_FROM}",		// Поле для первой сортировки новостей
+	"SORT_ORDER1" => "${5:DESC}",		// Направление для первой сортировки новостей
+	"IBLOCK_TYPE" => "${6:}",		// Тип информационного блока
+	"IBLOCK_ID" => "${7:}",		// Информационный блок
+	"ALLOW_SWF" => "${8:N}",		// Разрешить проигрывание swf-файлов (не рекомендуется)
+	"CACHE_TYPE" => "${9:A}",		// Тип кеширования
+	"CACHE_TIME" => "${10:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${11:}",		// 
+	"CACHE_GROUPS" => "${12:Y}",		// Учитывать права доступа
+	"SHOW_COUNTER_EVENT" => "${13:N}",		// Увеличить счетчик показов элемента
+	"STAT_EVENT" => "${14:N}",		// Учитывать события в модуле статистики
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_iblock_tv</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix iblock.tv</description>
+</snippet>

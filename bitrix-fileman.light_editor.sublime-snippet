@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:fileman.light_editor", "${1:.default}", Array(
+	"CONTENT" => "${2:}",		// Содержимое
+	"INPUT_NAME" => "${3:}",		// Имя элемента управления
+	"INPUT_ID" => "${4:}",		// ID элемента управления
+	"WIDTH" => "${5:100%}",		// Ширина редактора
+	"HEIGHT" => "${6:300px}",		// Высота редактора
+	"RESIZABLE" => "${7:N}",		// Разрешить пользователю изменять высоту области редактирования
+	"VIDEO_ALLOW_VIDEO" => "${8:Y}",		// Разрешить вставку видео
+	"VIDEO_MAX_WIDTH" => "${9:640}",		// Максимальная ширина видео
+	"VIDEO_MAX_HEIGHT" => "${10:480}",		// Максимальная высота видео
+	"VIDEO_BUFFER" => "${11:20}",		// Размер буфера в секундах
+	"VIDEO_LOGO" => "${12:}",		// Путь к изображению авторского знака
+	"VIDEO_WMODE" => "${13:transparent}",		// Режим окна (WMode)(Только для Flash-плеера)
+	"VIDEO_WINDOWLESS" => "${14:Y}",		// Режим окна (windowless)(Только для Silverlight-плеера)
+	"VIDEO_SKIN" => "${15:/bitrix/components/bitrix/player/mediaplayer/skins/bitrix.swf}",		// Путь к скину(Только для Flash-плеера)
+	"USE_FILE_DIALOGS" => "${16:N}",		// Разрешить использование файлового диалога
+	"ID" => "${17:}",		// Служебный ID элемента управления
+	"JS_OBJ_NAME" => "${18:}",		// Имя Javascript-объекта
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_fileman_light_editor</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix fileman.light_editor</description>
+</snippet>

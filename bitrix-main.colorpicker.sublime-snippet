@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.colorpicker", "${1:.default}", Array(
+	"SHOW_BUTTON" => "${2:Y}",		// Показывать кнопку
+	"ID" => "${3:}",		// Идентификатор
+	"NAME" => "${4:Выбор цвета}",		// Название
+	"ONSELECT" => "${5:}",		// Обработчик события выбора
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_colorpicker</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.colorpicker</description>
+</snippet>

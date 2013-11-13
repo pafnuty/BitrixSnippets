@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.discsave.info", "${1:.default}", Array(
+	"SITE_ID" => "${2:s1}",		// Сайт
+	"USER_ID" => "${3:}",		// ID пользователя
+	"SHOW_NEXT_LEVEL" => "${4:Y}",		// Показывать информацию о следующем уровне накоплений
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_discsave_info</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.discsave.info</description>
+</snippet>

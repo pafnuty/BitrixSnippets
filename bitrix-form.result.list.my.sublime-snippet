@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:form.result.list.my", "${1:.default}", Array(
+	"FORMS" => "${2:}",		// Формы (если не указано ни одной, то выборка будет по всем формам сайта)
+	"NUM_RESULTS" => "${3:10}",		// Количество результатов на одну форму
+	"LIST_URL" => "${4:my_result_list.php?WEB_FORM_ID=#FORM_ID#}",		// Страница со списком результатов
+	"VIEW_URL" => "${5:my_result_view.php?WEB_FORM_ID=#FORM_ID#&RESULT_ID=#RESULT_ID#}",		// Страница просмотра результата
+	"EDIT_URL" => "${6:my_result_edit.php?WEB_FORM_ID=#FORM_ID#&RESULT_ID=#RESULT_ID#}",		// Страница редактирования результата
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_form_result_list_my</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix form.result.list.my</description>
+</snippet>

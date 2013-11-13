@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.map", "${1:.default}", Array(
+	"LEVEL" => "${2:3}",		// Максимальный уровень вложенности (0 - без вложенности)
+	"COL_NUM" => "${3:1}",		// Количество колонок
+	"SHOW_DESCRIPTION" => "${4:N}",		// Показывать описания
+	"SET_TITLE" => "${5:Y}",		// Устанавливать заголовок страницы
+	"CACHE_TYPE" => "${6:A}",		// Тип кеширования
+	"CACHE_TIME" => "${7:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${8:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_map</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.map</description>
+</snippet>

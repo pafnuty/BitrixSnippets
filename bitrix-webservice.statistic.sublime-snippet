@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:webservice.statistic", "${1:.default}", Array(
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_webservice_statistic</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix webservice.statistic</description>
+</snippet>

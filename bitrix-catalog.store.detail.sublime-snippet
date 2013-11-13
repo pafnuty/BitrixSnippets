@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.store.detail", "${1:.default}", Array(
+	"STORE" => "${2:1}",		// ID склада
+	"MAP_TYPE" => "${3:Yandex}",		// Тип карты
+	"CACHE_TYPE" => "${4:A}",		// Тип кеширования
+	"CACHE_TIME" => "${5:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${6:}",		// 
+	"SET_TITLE" => "${7:Y}",		// Устанавливать заголовок страницы
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_store_detail</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix catalog.store.detail</description>
+</snippet>

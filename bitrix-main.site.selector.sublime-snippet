@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.site.selector", "${1:.default}", Array(
+	"SITE_LIST" => "${2:}",		// Список сайтов
+	"CACHE_TYPE" => "${3:A}",		// Тип кеширования
+	"CACHE_TIME" => "${4:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${5:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_site_selector</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix main.site.selector</description>
+</snippet>

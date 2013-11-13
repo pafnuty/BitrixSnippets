@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:form.result.list", "${1:.default}", Array(
+	"SEF_MODE" => "${2:N}",		// Включить поддержку ЧПУ
+	"WEB_FORM_ID" => ${3:\$_REQUEST[WEB_FORM_ID]},		// ID веб-формы
+	"VIEW_URL" => "${4:result_view.php}",		// Страница просмотра результата
+	"EDIT_URL" => "${5:result_edit.php}",		// Страница редактирования результата
+	"NEW_URL" => "${6:result_new.php}",		// Страница добавления результата
+	"SHOW_ADDITIONAL" => "${7:N}",		// Показать дополнительные поля веб-формы
+	"SHOW_ANSWER_VALUE" => "${8:N}",		// Показать значение параметра ANSWER_VALUE
+	"SHOW_STATUS" => "${9:Y}",		// Показать текущий статус результата
+	"NOT_SHOW_FILTER" => "${10:}",		// Коды полей которые нельзя показывать в фильтре (через запятую)
+	"NOT_SHOW_TABLE" => "${11:}",		// Коды полей которые нельзя показывать в таблице
+	"CHAIN_ITEM_TEXT" => "${12:}",		// Название дополнительного пункта в навигационной цепочке
+	"CHAIN_ITEM_LINK" => "${13:}",		// Ссылка на дополнительном пункте в навигационной цепочке
+	"SEF_FOLDER" => "${14:}",		// Каталог ЧПУ (относительно корня сайта)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_form_result_list</tabTrigger>
+<!-- <scope>text.html</scope> -->
+<description>Bitrix form.result.list</description>
+</snippet>
