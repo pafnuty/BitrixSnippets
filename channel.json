@@ -1,15 +1,31 @@
 {
-	"schema_version": "2.0",
-	"packages": [
-		{
-			"name": "BitrixSnippets",
-			"details": "https://github.com/pafnuty/BitrixSnippets",
-			"releases": [
-				{
-					"sublime_text": "*",
-					"details": "https://github.com/pafnuty/BitrixSnippets/tree/master"
-				}
-			]
-		}
-	]
+  "schema_version": "2.0",
+  "repositories": [
+    "https://github.com/pafnuty/BitrixSnippets"
+  ],
+  "packages_cache": {
+    "buy": null,
+    "name": "BitrixSnippets",
+    "labels": [],
+    "description": "Bitrix cnippets for SublimeText",
+    "homepage": "https://github.com/pafnuty/BitrixSnippets",
+    "readme": "https://raw.github.com/pafnuty/BitrixSnippets/master/README.md",
+    "releases": [
+      {
+        "platforms": [
+          "*"
+        ],
+        "url": "https://codeload.github.com/pafnuty/BitrixSnippets/zip/master",
+        "version": "1.0.1",
+        "sublime_text": "*",
+        "date": "2013-11-25 00:00:00"
+      }
+    ],
+    "previous_names": [
+      "Yandex Translate"
+    ],
+    "donate": "https://www.gittip.com/on/github/pafnuty/",
+    "author": "pafnuty",
+    "issues": "https://github.com/pafnuty/BitrixSnippets/issues"
+  }
 }
