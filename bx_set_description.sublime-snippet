@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<?
+	\$ShortText = htmlspecialchars(strip_tags(stripslashes(\$arResult["DETAIL_TEXT"])));
+
+	if (strlen(\$ShortText) > 200) {
+		\$ShortText = substr(\$ShortText, 0, 200);					
+		if(\$word_pos = strrpos(\$ShortText, ' ')) \$ShortText = substr(\$ShortText, 0, \$word_pos);			
+	} 
+	\$APPLICATION->SetPageProperty("description", \$ShortText);
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_set_description</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Устанавливаем метатег description из текста страницы</description>
+</snippet>

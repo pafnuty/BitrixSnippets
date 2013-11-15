@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<?echo "<pre class='cn-pre' data-text='${1:arResult}'>"; print_r(\$${1:arResult}); echo "</pre>";?>
+${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_printr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>print_r в окошке</description>
+</snippet>

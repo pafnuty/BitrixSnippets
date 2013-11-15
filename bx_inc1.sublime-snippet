@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.include", ".default", array(
+	"AREA_FILE_SHOW" => "file",
+	"PATH" => "/includes/${1:phone}.php",
+	"EDIT_TEMPLATE" => ""
+	),
+	false
+);?>
+${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_inc_1</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Включаемая область 1 типа</description>
+</snippet>
