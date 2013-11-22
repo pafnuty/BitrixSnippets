@@ -1,0 +1,8 @@
+BitrixSnippets - Набор сниппетов для CMS Bitrix
+==============================
+Добавлено два сниппета
+<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH.'/css/main.css', true)?>
+и 
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH.'/js/main.js', true)?>
+
+
