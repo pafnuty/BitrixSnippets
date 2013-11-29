@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+
+// Смена вида отображения списка товаров
+// JS
+	if (\$.cookie('CATALOG_SET_TEMPLATE')) {
+		\$('[data-set-template="' + \$.cookie('CATALOG_SET_TEMPLATE') + '"]').addClass('active').siblings().removeClass('active');
+	};
+	\$('.btn-set-template').on('click', function () {
+		var \$this = \$(this);
+		var sTpl = \$this.data('setTemplate');
+		if (sTpl == \$.cookie('CATALOG_SET_TEMPLATE')) {
+			return false;
+		} else {
+			\$.cookie('CATALOG_SET_TEMPLATE', sTpl, {
+				path: '/'
+			});
+			location.reload(); 
+		}
+	});
+// PHP (sectipn.php)
+// none - это значит шаблон .default
+// btn-set-template - это класс, на который навешиваем клик, 
+// data-set-template="xxx" - xxx - название шаблона списка элементов, можно добавлять сколько угодно
+	<span data-set-template="none" class="btn btn-set-template active">плиткой</span>
+	<span data-set-template="list" class="btn btn-set-template">списком</span>
+	<?
+	\$tmpl = '.default';
+	if (array_key_exists('CATALOG_SET_TEMPLATE',\$_COOKIE)) {
+		if (\$_COOKIE['CATALOG_SET_TEMPLATE'] == 'none') {
+			\$tmpl = '.default';
+		} else {
+			\$tmpl = \$_COOKIE['CATALOG_SET_TEMPLATE'];
+		}
+	}
+	?>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_change_catalog_template</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Смена шаблона списка элементов в каталоге</description>
+</snippet>

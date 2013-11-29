@@ -1,0 +1,119 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+/*
+* CNAutoLoad
+*
+* Автозагрузка js и css скриптов из указанной папки в шаблон сайта, 
+* через стандартные функции битрикса AddHeadScript и SetAdditionalCSS
+* Сделано для облегчения работы с сайтом, имеющим вагон шаблонов.
+* @version 0.0.2 2013-11-28
+* @author sallee AT info-expert.ru
+* ---------------------------------------
+* Использование:
+* Положить скрипт в папку /bitirx/php_interface/
+* Подключить в init.php: 
+* 	require_once ('cn_autoloader.php');
+* В шаблоне в том месте, где должны выводиться скрипты пишем:
+* 	<?CNAutoLoad(array('/res/js/', '/res/css/'), array('main', '--', 'ololo_'));?>
+*/
+
+/**
+ * Функция автозагрузки файлов
+ * @param array \$srcs      - Массив с путями к папкам от корня сайта
+ * @param array \$arRemarks - Массив с префиксами
+ */
+function CNAutoLoad(\$srcs=array(), \$arRemarks=array()) {
+	if (!is_array(\$arRemarks)) {
+		\$arRemarks = array();
+	}
+	// Добавляем '_' и '-' не зависимо от настроек вызова.
+	\$arRemarksM = array_merge(\$arRemarks, array('_', '-'));
+
+	foreach(\$srcs as \$src) {
+		CNAddHeadElement(\$src, \$arRemarksM);
+	}
+}
+/**
+ * Основная функция CNAddHeadElement
+ * @param string \$src       - Путь к файлу или папке
+ * @param array  \$arRemarks - Префиксы исключаемых файлов
+ * @return void
+ * @global \$APPLICATION
+ * @author sallee AT info-expert.ru
+ */
+function CNAddHeadElement(\$src, \$arRemarks) {
+
+	global \$APPLICATION;
+	\$arScriptExt = array('js', 'css');
+
+	if (empty(\$src))
+		return;
+	if (strpos(\$src, '/') !== 0)
+		\$src = '/'.\$src;
+	if (substr(\$src, -1) == '/') {
+		\$src = substr(\$src, 0, -1);
+	}
+	\$fullSrc = \$_SERVER['DOCUMENT_ROOT'].\$src;
+	
+	if (file_exists(\$fullSrc) && is_readable(\$fullSrc)) {
+		if (is_dir(\$fullSrc)) {
+			if (substr(\$src, -1) != '/') {
+				\$src = \$src.'/';
+			}
+			if (\$dh = opendir(\$fullSrc)) {
+				while((\$file=readdir(\$dh)) !== false) {
+					if (in_array(\$file, array('.','..')) || is_dir(\$fullSrc.'/'.\$file))
+						continue;
+					\$ext = ToLower(end(explode('.', \$file)));
+					if (in_array(\$ext, \$arScriptExt) && !strposArr(\$file, \$arRemarks)) {
+						if (\$ext == 'js') {							
+							\$APPLICATION->AddHeadScript(\$src.\$file);
+						} 
+						if (\$ext == 'css') {
+							\$APPLICATION->SetAdditionalCSS(\$src.\$file);
+						}
+					}
+				}
+				closedir(\$dh);
+			}
+		}
+		else {
+			\$ext = ToLower(end(explode('.', \$src)));
+			if (in_array(\$ext, \$arScriptExt) && !strposArr(\$file, \$arRemarks)) {
+				if (\$ext == 'js') {
+					\$APPLICATION->AddHeadScript(\$src);
+				} 
+				if (\$ext == 'css') {
+					\$APPLICATION->SetAdditionalCSS(\$src);
+				}
+			}
+		}
+	}
+}
+
+
+/**
+ * Небольшое улучшение strpos()
+ * @param  string \$str - строка в кторой будем искать
+ * @param  array \$arr  - массив, совпадения с которым ищем.
+ * @return bool
+ * @author pafnuty <pb@info-expert.ru>
+ */
+function strposArr(\$str, \$arr) {
+	foreach(\$arr as \$v) {
+		if((\$pos = strpos(\$str, \$v)) !== false && \$pos == '0') {
+			return true;
+		}
+	}
+	return false;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_cn_autoload</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Автозагрузка js и css скриптов из папки</description>
+</snippet>
