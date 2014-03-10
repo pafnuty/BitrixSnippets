@@ -2,7 +2,7 @@
 	<content><![CDATA[
 <?\$APPLICATION->IncludeComponent("bitrix:main.include", ".default", array(
 	"AREA_FILE_SHOW" => "file",
-	"PATH" => "/includes/${1:phone}.php",
+	"PATH" => "/local/codenails/includes/${1:file}.php",
 	"EDIT_TEMPLATE" => ""
 	),
 	false

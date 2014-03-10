@@ -29,7 +29,7 @@ $APPLICATION->GetCurPage()
 ```
 <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default", array(
 	"AREA_FILE_SHOW" => "file",
-	"PATH" => "/includes/phone.php",
+	"PATH" => "/local/codenails/includes/file.php",
 	"EDIT_TEMPLATE" => ""
 	),
 	false
