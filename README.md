@@ -85,4 +85,28 @@ if ($USER->IsAdmin()) {
 <?=SITE_TEMPLATE_PATH?>/
 ```
 
+
+*bx_resize_image_get*
+```
+<?
+	// Ресайз картинки для последующего показа через MagnificPopup
+	$image = CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>150, 'height'=>150), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, true);
+	$resizedImg = ($image['src']) ? $image['src'] : $arResult['DETAIL_PICTURE'];
+?>
+<img 
+	class="popup-image" 
+	src="<?=$resizedImg?>" 
+	data-mfp-src="<?=$arResult['DETAIL_PICTURE']['SRC']?>"
+	alt="<?=$arResult['DETAIL_PICTURE']['ALT']?>"
+	title="<?=$arResult['DETAIL_PICTURE']['TITLE']?>"
+>
+// Вставка в js-файл
+// Галерея картинок
+$('.popup-image').magnificPopup({
+	type: 'image',
+	gallery: {
+		enabled: true
+	}
+});
+```
   [1]: https://github.com/AndreyGo/SublimeBitrixSnippets
