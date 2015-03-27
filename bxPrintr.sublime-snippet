@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<?bxPrintr(${1:/$arResult}, ${2:false}, '${3:arResult}');?>
+<?bxPrintr(${1:\$arResult}, ${2:false}, '${3:arResult}');?>
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
