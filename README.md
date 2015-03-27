@@ -109,4 +109,29 @@ $('.popup-image').magnificPopup({
 	}
 });
 ```
+
+*bx_composite_js*
+``` javascript
+if (window.frameCacheVars !== undefined) {
+    BX.addCustomEvent("onFrameDataReceived", function (json) {
+        runFunction();
+    });
+}
+else {
+    jQuery(document).ready(function (\$) {
+        runFunction();
+    });
+}
+
+function runFunction() {
+    ${0:console.log('go-go-go');}
+}
+```
+
+*bxPrintr* Новый, более удобный *bx_printr* для последней версии быстрого старта.
+```
+<?bxPrintr(${1:/$arResult}, ${2:false}, '${3:arResult}');?>
+${0}
+```
+
   [1]: https://github.com/AndreyGo/SublimeBitrixSnippets
