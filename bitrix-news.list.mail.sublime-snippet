@@ -1,0 +1,32 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:news.list.mail", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:news}",		// Тип информационного блока (используется только для проверки)
+	"IBLOCK_ID" => ${3:\$_REQUEST["ID"]},		// Код информационного блока
+	"NEWS_COUNT" => "${4:20}",		// Количество новостей на странице
+	"SORT_BY1" => "${5:ACTIVE_FROM}",		// Поле для первой сортировки новостей
+	"SORT_ORDER1" => "${6:DESC}",		// Направление для первой сортировки новостей
+	"SORT_BY2" => "${7:SORT}",		// Поле для второй сортировки новостей
+	"SORT_ORDER2" => "${8:ASC}",		// Направление для второй сортировки новостей
+	"FILTER_NAME" => "${9:}",		// Фильтр
+	"FIELD_CODE" => "${10:}",		// Поля
+	"PROPERTY_CODE" => "${11:}",		// Свойства
+	"CHECK_DATES" => "${12:Y}",		// Показывать только активные на данный момент элементы
+	"DETAIL_URL" => "${13:}",		// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+	"PREVIEW_TRUNCATE_LEN" => "${14:}",		// Максимальная длина анонса для вывода (только для типа текст)
+	"ACTIVE_DATE_FORMAT" => "${15:d.m.Y}",		// Формат показа даты
+	"HIDE_LINK_WHEN_NO_DETAIL" => "${16:N}",		// Скрывать ссылку, если нет детального описания
+	"PARENT_SECTION" => "${17:}",		// ID раздела
+	"PARENT_SECTION_CODE" => "${18:}",		// Код раздела
+	"INCLUDE_SUBSECTIONS" => "${19:Y}",		// Показывать элементы подразделов раздела
+	"CACHE_TYPE" => "${20:A}",		// Тип кеширования
+	"CACHE_TIME" => "${21:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${22:}",		// 
+	"CACHE_FILTER" => "${23:N}",		// Кешировать при установленном фильтре
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_news_list_mail</tabTrigger>
+<description>Bitrix news.list.mail</description>
+</snippet>

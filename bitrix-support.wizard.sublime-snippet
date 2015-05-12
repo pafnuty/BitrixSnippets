@@ -27,6 +27,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_support_wizard</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix support.wizard</description>
 </snippet>

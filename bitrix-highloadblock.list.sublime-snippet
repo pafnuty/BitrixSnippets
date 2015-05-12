@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:highloadblock.list", "${1:.default}", Array(
+	"BLOCK_ID" => "${2:}",		// ID инфоблока
+	"DETAIL_URL" => "${3:}",		// Путь к странице просмотра записи
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_highloadblock_list</tabTrigger>
+<description>Bitrix highloadblock.list</description>
+</snippet>

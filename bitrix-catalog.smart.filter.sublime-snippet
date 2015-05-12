@@ -4,19 +4,23 @@
 	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
 	"IBLOCK_ID" => "${3:}",		// Инфоблок
 	"SECTION_ID" => ${4:\$_REQUEST["SECTION_ID"]},		// ID раздела инфоблока
-	"FILTER_NAME" => "${5:arrFilter}",		// Имя выходящего массива для фильтрации
-	"PRICE_CODE" => "${6:}",		// Тип цены
-	"CACHE_TYPE" => "${7:A}",		// Тип кеширования
-	"CACHE_TIME" => "${8:36000000}",		// Время кеширования (сек.)
-	"CACHE_NOTES" => "${9:}",		// 
-	"CACHE_GROUPS" => "${10:Y}",		// Учитывать права доступа
-	"SAVE_IN_SESSION" => "${11:N}",		// Сохранять установки фильтра в сессии пользователя
-	"INSTANT_RELOAD" => "${12:N}",		// Мгновенная фильтрация при включенном AJAX
+	"SECTION_CODE" => "${5:}",		// Код раздела
+	"FILTER_NAME" => "${6:arrFilter}",		// Имя выходящего массива для фильтрации
+	"PRICE_CODE" => "${7:}",		// Тип цены
+	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
+	"CACHE_TIME" => "${9:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${10:}",		// 
+	"CACHE_GROUPS" => "${11:Y}",		// Учитывать права доступа
+	"SAVE_IN_SESSION" => "${12:N}",		// Сохранять установки фильтра в сессии пользователя
+	"INSTANT_RELOAD" => "${13:N}",		// Мгновенная фильтрация при включенном AJAX
+	"XML_EXPORT" => "${14:N}",		// Включить поддержку Яндекс Островов
+	"SECTION_TITLE" => "${15:-}",		// Заголовок
+	"SECTION_DESCRIPTION" => "${16:-}",		// Описание
+	"HIDE_NOT_AVAILABLE" => "${17:N}",		// Не отображать товары, которых нет на складах
 	),
 	false
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_smart_filter</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.smart.filter</description>
 </snippet>

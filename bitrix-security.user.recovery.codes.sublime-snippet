@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:security.user.recovery.codes", "${1:.default}", Array(
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_security_user_recovery_codes</tabTrigger>
+<description>Bitrix security.user.recovery.codes</description>
+</snippet>

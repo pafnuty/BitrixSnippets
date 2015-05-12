@@ -11,6 +11,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_voting_result</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix voting.result</description>
 </snippet>

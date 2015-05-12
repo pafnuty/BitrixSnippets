@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.location.selector.search", "${1:.default}", Array(
+	"ID" => "${2:}",		// ID местоположения
+	"CODE" => "${3:}",		// Символьный код местоположения
+	"INPUT_NAME" => "${4:LOCATION}",		// Имя поля ввода
+	"PROVIDE_LINK_BY" => "${5:id}",		// Сохранять связь через
+	"SEARCH_BY_PRIMARY" => "${6:N}",		// Искать по идентификатору и коду
+	"EXCLUDE_SUBTREE" => "${7:}",		// Исключить поддерево элемента
+	"JSCONTROL_GLOBAL_ID" => "${8:}",		// Идентификатор javascript-контрола
+	"JS_CALLBACK" => "${9:}",		// Javascript-функция обратного вызова
+	"CACHE_TYPE" => "${10:A}",		// Тип кеширования
+	"CACHE_TIME" => "${11:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${12:}",		// 
+	"FILTER_BY_SITE" => "${13:Y}",		// Фильтровать по сайту
+	"SHOW_DEFAULT_LOCATIONS" => "${14:Y}",		// Отображать местоположения по умолчанию
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_sale_location_selector_search</tabTrigger>
+<description>Bitrix sale.location.selector.search</description>
+</snippet>

@@ -6,6 +6,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_webservice_checkauth</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix webservice.checkauth</description>
 </snippet>

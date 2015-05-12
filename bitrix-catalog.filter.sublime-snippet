@@ -20,6 +20,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_filter</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.filter</description>
 </snippet>

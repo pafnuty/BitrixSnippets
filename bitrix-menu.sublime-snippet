@@ -16,6 +16,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_menu</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix menu</description>
 </snippet>

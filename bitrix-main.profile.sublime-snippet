@@ -15,6 +15,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_main_profile</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix main.profile</description>
 </snippet>

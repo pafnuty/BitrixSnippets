@@ -1,0 +1,48 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.recommended.products", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:catalog}",		// Тип инфоблока
+	"IBLOCK_ID" => ${3:\$_REQUEST["IBLOCK_ID"]},		// Идентификатор инфоблока товара
+	"ID" => ${4:\$_REQUEST["PRODUCT_ID"]},		// Идентификатор товара
+	"CODE" => ${5:\$_REQUEST["PRODUCT_CODE"]},		// Код товара
+	"PROPERTY_LINK" => "${6:RECOMMEND}",		// Свойство привязки
+	"OFFERS_PROPERTY_LINK" => "${7:RECOMMEND}",		// Свойство привязки для торговых предложений
+	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
+	"CACHE_TIME" => "${9:86400}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${10:}",		// 
+	"DETAIL_URL" => "${11:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"BASKET_URL" => "${12:/personal/basket.php}",		// URL, ведущий на страницу с корзиной покупателя
+	"ACTION_VARIABLE" => "${13:action}",		// Название переменной, в которой передается действие
+	"PRODUCT_ID_VARIABLE" => "${14:id}",		// Название переменной, в которой передается код товара для покупки
+	"PRODUCT_QUANTITY_VARIABLE" => "${15:quantity}",		// Название переменной, в которой передается количество товара
+	"ADD_PROPERTIES_TO_BASKET" => "${16:Y}",		// Добавлять в корзину свойства товаров и предложений
+	"PRODUCT_PROPS_VARIABLE" => "${17:prop}",		// Название переменной, в которой передаются характеристики товара
+	"PARTIAL_PRODUCT_PROPERTIES" => "${18:N}",		// Разрешить частично заполненные свойства
+	"SHOW_OLD_PRICE" => "${19:}",		// Показывать старую цену
+	"SHOW_DISCOUNT_PERCENT" => "${20:N}",		// Показывать процент скидки
+	"PRICE_CODE" => "${21:}",		// Тип цены
+	"SHOW_PRICE_COUNT" => "${22:1}",		// Выводить цены для количества
+	"PRODUCT_SUBSCRIPTION" => "${23:N}",		// Разрешить оповещения для отсутствующих товаров
+	"PRICE_VAT_INCLUDE" => "${24:Y}",		// Включать НДС в цену
+	"USE_PRODUCT_QUANTITY" => "${25:N}",		// Разрешить указание количества товара
+	"SHOW_NAME" => "${26:Y}",		// Показывать название
+	"SHOW_IMAGE" => "${27:Y}",		// Показывать изображение
+	"MESS_BTN_BUY" => "${28:Купить}",		// Текст кнопки "Купить"
+	"MESS_BTN_DETAIL" => "${29:Подробнее}",		// Текст кнопки "Подробнее"
+	"MESS_NOT_AVAILABLE" => "${30:Нет в наличии}",		// Сообщение об отсутствии товара
+	"MESS_BTN_SUBSCRIBE" => "${31:Подписаться}",		// Текст кнопки "Уведомить о поступлении"
+	"PAGE_ELEMENT_COUNT" => "${32:30}",		// Количество элементов на странице
+	"SHOW_PRODUCTS_4" => "${33:N}",		// Показывать товары каталога
+	"PROPERTY_CODE_4" => "${34:}",		// Свойства для отображения
+	"CART_PROPERTIES_4" => "${35:}",		// Свойства для добавления в корзину
+	"ADDITIONAL_PICT_PROP_4" => "${36:-}",		// Дополнительная картинка
+	"LABEL_PROP_4" => "${37:-}",		// Свойство меток товара
+	"HIDE_NOT_AVAILABLE" => "${38:N}",		// Не отображать товары, которых нет на складах
+	"CONVERT_CURRENCY" => "${39:N}",		// Показывать цены в одной валюте
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_recommended_products</tabTrigger>
+<description>Bitrix catalog.recommended.products</description>
+</snippet>

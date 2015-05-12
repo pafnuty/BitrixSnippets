@@ -23,6 +23,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_fileman_light_editor</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix fileman.light_editor</description>
 </snippet>

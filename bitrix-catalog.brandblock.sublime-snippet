@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.brandblock", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Идентификатор инфоблока
+	"ELEMENT_ID" => ${4:\$_REQUEST["ELEMENT_ID"]},		// Идентификатор элемента инфоблока
+	"ELEMENT_CODE" => "${5:}",		// Код элемента инфоблока
+	"PROP_CODE" => "${6:}",		// Таблица брендов
+	"WIDTH" => "${7:120}",		// Максимальная ширина изображения без описания (пикс)
+	"HEIGHT" => "${8:50}",		// Максимальная высота изображения без описания (пикс)
+	"WIDTH_SMALL" => "${9:21}",		// Максимальная ширина изображения с описанием (пикс)
+	"HEIGHT_SMALL" => "${10:17}",		// Максимальная высота изображения с описанием (пикс)
+	"CACHE_TYPE" => "${11:A}",		// Тип кеширования
+	"CACHE_TIME" => "${12:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${13:}",		// 
+	"CACHE_GROUPS" => "${14:Y}",		// Учитывать права доступа
+	"SINGLE_COMPONENT" => "${15:Y}",		// Выводить как список
+	"ELEMENT_COUNT" => "${16:3}",		// Количество элементов на странице
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_brandblock</tabTrigger>
+<description>Bitrix catalog.brandblock</description>
+</snippet>

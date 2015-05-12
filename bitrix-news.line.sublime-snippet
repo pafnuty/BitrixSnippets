@@ -20,6 +20,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_news_line</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix news.line</description>
 </snippet>

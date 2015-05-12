@@ -24,6 +24,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_rss_out</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix rss.out</description>
 </snippet>

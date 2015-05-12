@@ -17,6 +17,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_support_faq_section_list</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix support.faq.section.list</description>
 </snippet>

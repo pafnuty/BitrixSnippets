@@ -8,6 +8,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_socserv_auth_split</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix socserv.auth.split</description>
 </snippet>

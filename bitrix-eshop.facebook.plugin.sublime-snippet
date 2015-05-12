@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:eshop.facebook.plugin", "${1:.default}", Array(
+	"ESHOP_FACEBOOK_LINK" => "${2:}",		// Ссылка на страницу facebook
+	"ESHOP_PLUGIN_WIDTH" => "${3:230}",		// Ширина блока с плагином
+	"ESHOP_PLUGIN_HEIGHT" => "${4:}",		// Высота блока с плагином
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_eshop_facebook_plugin</tabTrigger>
+<description>Bitrix eshop.facebook.plugin</description>
+</snippet>

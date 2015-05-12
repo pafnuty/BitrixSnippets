@@ -18,6 +18,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_iblock_element_add_list</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix iblock.element.add.list</description>
 </snippet>

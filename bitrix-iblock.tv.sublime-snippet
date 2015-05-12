@@ -19,6 +19,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_iblock_tv</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix iblock.tv</description>
 </snippet>

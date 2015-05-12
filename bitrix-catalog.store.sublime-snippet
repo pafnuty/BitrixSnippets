@@ -18,6 +18,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_store</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.store</description>
 </snippet>

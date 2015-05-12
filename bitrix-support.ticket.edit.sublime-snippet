@@ -13,6 +13,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_support_ticket_edit</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix support.ticket.edit</description>
 </snippet>

@@ -7,15 +7,16 @@
 	"DETAIL_URL" => "${5:}",		// URL, ведущий на страницу с содержимым элемента раздела
 	"COMPARE_URL" => "${6:compare.php}",		// URL страницы с таблицей сравнения
 	"NAME" => "${7:CATALOG_COMPARE_LIST}",		// Уникальное имя для списка сравнения
-	"AJAX_OPTION_JUMP" => "${8:N}",		// Включить прокрутку к началу компонента
-	"AJAX_OPTION_STYLE" => "${9:Y}",		// Включить подгрузку стилей
-	"AJAX_OPTION_HISTORY" => "${10:N}",		// Включить эмуляцию навигации браузера
-	"AJAX_OPTION_ADDITIONAL" => "${11:}",		// Дополнительный идентификатор
+	"ACTION_VARIABLE" => "${8:action}",		// Название переменной, в которой передается действие
+	"PRODUCT_ID_VARIABLE" => "${9:id}",		// Название переменной, в которой передается код товара для покупки
+	"AJAX_OPTION_JUMP" => "${10:N}",		// Включить прокрутку к началу компонента
+	"AJAX_OPTION_STYLE" => "${11:Y}",		// Включить подгрузку стилей
+	"AJAX_OPTION_HISTORY" => "${12:N}",		// Включить эмуляцию навигации браузера
+	"AJAX_OPTION_ADDITIONAL" => "${13:}",		// Дополнительный идентификатор
 	),
 	false
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_compare_list</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.compare.list</description>
 </snippet>

@@ -34,14 +34,14 @@
 	"NO_WORD_LOGIC" => "${32:N}",		// Отключить обработку слов как логических операторов
 	"USE_LANGUAGE_GUESS" => "${33:Y}",		// Включить автоопределение раскладки клавиатуры
 	"CHECK_DATES" => "${34:N}",		// Искать только в активных по дате документах
-	"DISPLAY_TOP_PAGER" => "${35:N}",		// Выводить над списком
-	"DISPLAY_BOTTOM_PAGER" => "${36:Y}",		// Выводить под списком
-	"PAGER_TITLE" => "${37:Товары}",		// Название категорий
-	"PAGER_SHOW_ALWAYS" => "${38:Y}",		// Выводить всегда
-	"PAGER_TEMPLATE" => "${39:}",		// Название шаблона
+	"PAGER_TEMPLATE" => "${35:.default}",		// Шаблон постраничной навигации
+	"DISPLAY_TOP_PAGER" => "${36:N}",		// Выводить над списком
+	"DISPLAY_BOTTOM_PAGER" => "${37:Y}",		// Выводить под списком
+	"PAGER_TITLE" => "${38:Товары}",		// Название категорий
+	"PAGER_SHOW_ALWAYS" => "${39:N}",		// Выводить всегда
 	"PAGER_DESC_NUMBERING" => "${40:N}",		// Использовать обратную навигацию
 	"PAGER_DESC_NUMBERING_CACHE_TIME" => "${41:36000}",		// Время кеширования страниц для обратной навигации
-	"PAGER_SHOW_ALL" => "${42:Y}",		// Показывать ссылку "Все"
+	"PAGER_SHOW_ALL" => "${42:N}",		// Показывать ссылку "Все"
 	"HIDE_NOT_AVAILABLE" => "${43:N}",		// Не отображать товары, которых нет на складах
 	"CONVERT_CURRENCY" => "${44:N}",		// Показывать цены в одной валюте
 	"AJAX_OPTION_JUMP" => "${45:N}",		// Включить прокрутку к началу компонента
@@ -53,6 +53,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_search</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.search</description>
 </snippet>

@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:highloadblock.view", "${1:.default}", Array(
+	"BLOCK_ID" => ${2:\$_REQUEST['BLOCK_ID']},		// ID инфоблока
+	"ROW_ID" => ${3:\$_REQUEST['ID']},		// ID записи
+	"LIST_URL" => "${4:}",		// Путь к странице списка записей
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_highloadblock_view</tabTrigger>
+<description>Bitrix highloadblock.view</description>
+</snippet>

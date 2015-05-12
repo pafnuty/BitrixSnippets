@@ -9,6 +9,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_voting_list</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix voting.list</description>
 </snippet>

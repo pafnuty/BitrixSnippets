@@ -9,6 +9,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_discsave_info</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.discsave.info</description>
 </snippet>

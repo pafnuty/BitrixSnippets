@@ -10,6 +10,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_system_auth_form</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix system.auth.form</description>
 </snippet>

@@ -13,6 +13,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_main_map</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix main.map</description>
 </snippet>

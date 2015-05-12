@@ -1,0 +1,50 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.viewed.products", "${1:.default}", Array(
+	"DETAIL_URL" => "${2:}",		// URL, ведущий на страницу с содержимым элемента раздела
+	"BASKET_URL" => "${3:/personal/basket.php}",		// URL, ведущий на страницу с корзиной покупателя
+	"ACTION_VARIABLE" => "${4:action}",		// Название переменной, в которой передается действие
+	"PRODUCT_ID_VARIABLE" => "${5:id}",		// Название переменной, в которой передается код товара для покупки
+	"PRODUCT_QUANTITY_VARIABLE" => "${6:quantity}",		// Название переменной, в которой передается количество товара
+	"ADD_PROPERTIES_TO_BASKET" => "${7:Y}",		// Добавлять в корзину свойства товаров и предложений
+	"PRODUCT_PROPS_VARIABLE" => "${8:prop}",		// Название переменной, в которой передаются характеристики товара
+	"PARTIAL_PRODUCT_PROPERTIES" => "${9:N}",		// Разрешить частично заполненные свойства
+	"SHOW_OLD_PRICE" => "${10:}",		// Показывать старую цену
+	"SHOW_DISCOUNT_PERCENT" => "${11:Y}",		// Показывать процент скидки
+	"PRICE_CODE" => "${12:}",		// Тип цены
+	"SHOW_PRICE_COUNT" => "${13:1}",		// Выводить цены для количества
+	"PRODUCT_SUBSCRIPTION" => "${14:N}",		// Разрешить оповещения для отсутствующих товаров
+	"PRICE_VAT_INCLUDE" => "${15:Y}",		// Включать НДС в цену
+	"USE_PRODUCT_QUANTITY" => "${16:N}",		// Разрешить указание количества товара
+	"SHOW_NAME" => "${17:Y}",		// Показывать название
+	"SHOW_IMAGE" => "${18:Y}",		// Показывать изображение
+	"MESS_BTN_BUY" => "${19:Купить}",		// Текст кнопки "Купить"
+	"MESS_BTN_DETAIL" => "${20:Подробнее}",		// Текст кнопки "Подробнее"
+	"MESS_BTN_SUBSCRIBE" => "${21:Подписаться}",		// Текст кнопки "Уведомить о поступлении"
+	"PAGE_ELEMENT_COUNT" => "${22:5}",		// Количество элементов на странице
+	"SHOW_FROM_SECTION" => "${23:N}",		// Показывать товары из раздела
+	"IBLOCK_TYPE" => "${24:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${25:}",		// Инфоблок
+	"SECTION_ID" => ${26:\$GLOBALS["CATALOG_CURRENT_SECTION_ID"]},		// ID раздела
+	"SECTION_CODE" => "${27:}",		// Код раздела
+	"SECTION_ELEMENT_ID" => ${28:\$GLOBALS["CATALOG_CURRENT_ELEMENT_ID"]},		// ID элемента, для которого будет выбран раздел
+	"SECTION_ELEMENT_CODE" => "${29:}",		// Символьный код элемента, для которого будет выбран раздел
+	"DEPTH" => "${30:2}",		// Максимальная отображаемая глубина разделов
+	"CACHE_TYPE" => "${31:A}",		// Тип кеширования
+	"CACHE_TIME" => "${32:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${33:}",		// 
+	"CACHE_GROUPS" => "${34:Y}",		// Учитывать права доступа
+	"SHOW_PRODUCTS_4" => "${35:N}",		// Показывать товары каталога
+	"PROPERTY_CODE_4" => "${36:}",		// Свойства для отображения
+	"CART_PROPERTIES_4" => "${37:}",		// Свойства для добавления в корзину
+	"ADDITIONAL_PICT_PROP_4" => "${38:-}",		// Дополнительная картинка
+	"LABEL_PROP_4" => "${39:-}",		// Свойство меток товара
+	"HIDE_NOT_AVAILABLE" => "${40:N}",		// Не отображать товары, которых нет на складах
+	"CONVERT_CURRENCY" => "${41:N}",		// Показывать цены в одной валюте
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_viewed_products</tabTrigger>
+<description>Bitrix catalog.viewed.products</description>
+</snippet>

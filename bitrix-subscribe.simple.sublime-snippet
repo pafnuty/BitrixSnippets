@@ -16,6 +16,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_subscribe_simple</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix subscribe.simple</description>
 </snippet>

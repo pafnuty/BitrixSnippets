@@ -6,6 +6,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_webservice_statistic</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix webservice.statistic</description>
 </snippet>

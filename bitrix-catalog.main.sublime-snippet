@@ -12,6 +12,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_main</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.main</description>
 </snippet>

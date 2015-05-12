@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.socnets.buttons", "${1:.default}", Array(
+	"URL_TO_LIKE" => "${2:}",		// Адрес публикуемой страницы
+	"TITLE" => "${3:}",		// Заголовок публикации
+	"DESCRIPTION" => "${4:}",		// Текст публикации
+	"IMAGE" => "${5:}",		// Адрес изображения
+	"FB_USE" => "${6:Y}",		// Включить использование Facebook
+	"TW_USE" => "${7:Y}",		// Включить использование Twitter
+	"GP_USE" => "${8:Y}",		// Включить использование Google+
+	"VK_USE" => "${9:Y}",		// Включить использование В Контакте
+	"TW_VIA" => "${10:}",		// С помощью (via)
+	"TW_HASHTAGS" => "${11:}",		// Отметить (hashtags)
+	"TW_RELATED" => "${12:}",		// Рекомендовать (related)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_socnets_buttons</tabTrigger>
+<description>Bitrix catalog.socnets.buttons</description>
+</snippet>

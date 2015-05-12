@@ -9,6 +9,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_main_include</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix main.include</description>
 </snippet>

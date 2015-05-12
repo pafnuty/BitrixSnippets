@@ -18,6 +18,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_support_ticket</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix support.ticket</description>
 </snippet>

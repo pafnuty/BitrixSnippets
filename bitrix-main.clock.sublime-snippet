@@ -11,6 +11,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_main_clock</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix main.clock</description>
 </snippet>

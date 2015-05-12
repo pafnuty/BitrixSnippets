@@ -10,6 +10,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_statistic_table</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix statistic.table</description>
 </snippet>

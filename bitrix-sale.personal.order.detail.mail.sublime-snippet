@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.personal.order.detail.mail", "${1:.default}", Array(
+	"ID" => "${2:}",		// Идентификатор заказа
+	"SHOW_ORDER_BASKET" => "${3:Y}",		// Показывать состав заказа
+	"SHOW_ORDER_BASE" => "${4:Y}",		// Показывать общие данные заказа
+	"SHOW_ORDER_USER" => "${5:Y}",		// Показывать данные учетной записи
+	"SHOW_ORDER_PARAMS" => "${6:Y}",		// Показывать параметры заказа
+	"SHOW_ORDER_BUYER" => "${7:Y}",		// Показывать личные данные
+	"SHOW_ORDER_DELIVERY" => "${8:Y}",		// Показывать данные для доставки
+	"SHOW_ORDER_PAYMENT" => "${9:Y}",		// Показывать параметры доставки и оплаты
+	"SHOW_ORDER_SUM" => "${10:Y}",		// Показывать итоговую сумму
+	"CUSTOM_SELECT_PROPS" => "${11:}",		// Выводимые колонки состава заказа
+	"PATH_TO_LIST" => "${12:}",		// Страница со списком заказов
+	"PATH_TO_CANCEL" => "${13:}",		// Страница отмены заказа
+	"PATH_TO_PAYMENT" => "${14:payment.php}",		// Страница подключения платежной системы
+	"CACHE_TYPE" => "${15:A}",		// Тип кеширования
+	"CACHE_TIME" => "${16:3600}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${17:}",		// 
+	"ACTIVE_DATE_FORMAT" => "${18:d.m.Y}",		// Формат показа даты
+	"PICTURE_WIDTH" => "${19:110}",		// Ограничение по ширине для анонсного изображения, px
+	"PICTURE_HEIGHT" => "${20:110}",		// Ограничение по высоте для анонсного изображения, px
+	"PICTURE_RESAMPLE_TYPE" => "${21:1}",		// Тип масштабирования
+	"PROP_1" => "${22:}",		// Не показывать свойства для типа плательщика "Физическое лицо" (s1)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_sale_personal_order_detail_mail</tabTrigger>
+<description>Bitrix sale.personal.order.detail.mail</description>
+</snippet>

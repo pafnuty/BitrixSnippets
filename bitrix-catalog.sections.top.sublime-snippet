@@ -43,6 +43,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_sections_top</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.sections.top</description>
 </snippet>

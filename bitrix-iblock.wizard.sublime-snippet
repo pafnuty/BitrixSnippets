@@ -21,6 +21,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_iblock_wizard</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix iblock.wizard</description>
 </snippet>

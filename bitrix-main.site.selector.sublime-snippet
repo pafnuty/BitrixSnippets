@@ -10,6 +10,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_main_site_selector</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix main.site.selector</description>
 </snippet>

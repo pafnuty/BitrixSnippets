@@ -9,6 +9,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_system_auth_confirmation</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix system.auth.confirmation</description>
 </snippet>

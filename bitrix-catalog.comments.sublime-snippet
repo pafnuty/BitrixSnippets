@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.comments", "${1:.default}", Array(
+	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Идентификатор инфоблока
+	"ELEMENT_ID" => ${4:\$_REQUEST["ELEMENT_ID"]},		// Идентификатор товара
+	"ELEMENT_CODE" => "${5:}",		// Код товара
+	"URL_TO_COMMENT" => "${6:}",		// Путь к комментируемому товару
+	"WIDTH" => "${7:}",		// Ширина
+	"COMMENTS_COUNT" => "${8:5}",		// Количество показываемых комментариев
+	"FB_USE" => "${9:N}",		// Использовать Facebook
+	"VK_USE" => "${10:N}",		// Использовать Вконтакте
+	"CACHE_TYPE" => "${11:A}",		// Тип кеширования
+	"CACHE_TIME" => "${12:0}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${13:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_comments</tabTrigger>
+<description>Bitrix catalog.comments</description>
+</snippet>

@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.basket.basket.small.mail", "${1:.default}", Array(
+	"COLUMNS_LIST" => "${2:}",		// Выводимые колонки
+	"USER_ID" => "${3:}",		// Код пользователя
+	"PATH_TO_BASKET" => "${4:/personal/basket.php}",		// Страница корзины
+	"PATH_TO_ORDER" => "${5:/personal/order.php}",		// Страница оформления заказа
+	"SHOW_DELAY" => "${6:Y}",		// Показывать отложенные товары
+	"SHOW_NOTAVAIL" => "${7:Y}",		// Показывать товары, недоступные для покупки
+	"SHOW_SUBSCRIBE" => "${8:Y}",		// Показывать товары, на которые подписан покупатель
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_sale_basket_basket_small_mail</tabTrigger>
+<description>Bitrix sale.basket.basket.small.mail</description>
+</snippet>

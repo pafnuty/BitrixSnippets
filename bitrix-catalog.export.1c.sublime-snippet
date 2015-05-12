@@ -11,6 +11,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_export_1c</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.export.1c</description>
 </snippet>

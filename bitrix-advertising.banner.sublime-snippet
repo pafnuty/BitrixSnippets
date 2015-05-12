@@ -11,6 +11,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_advertising_banner</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix advertising.banner</description>
 </snippet>

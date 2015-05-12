@@ -3,7 +3,7 @@
 <?\$APPLICATION->IncludeComponent("bitrix:voting.current", "${1:.default}", Array(
 	"CHANNEL_SID" => "${2:}",		// Группа опросов
 	"VOTE_ID" => "${3:}",		// ID опроса
-	"VOTE_ALL_RESULTS" => "${4:N}",		// Показывать все результаты
+	"VOTE_ALL_RESULTS" => "${4:N}",		// Показывать варианты ответов для полей типа Text и Textarea
 	"CACHE_TYPE" => "${5:A}",		// Тип кеширования
 	"CACHE_TIME" => "${6:3600}",		// Время кеширования (сек.)
 	"CACHE_NOTES" => "${7:}",		// 
@@ -17,6 +17,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_voting_current</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix voting.current</description>
 </snippet>

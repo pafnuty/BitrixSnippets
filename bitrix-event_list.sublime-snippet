@@ -12,6 +12,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_event_list</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix event_list</description>
 </snippet>

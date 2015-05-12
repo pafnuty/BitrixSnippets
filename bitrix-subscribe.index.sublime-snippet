@@ -3,7 +3,7 @@
 <?\$APPLICATION->IncludeComponent("bitrix:subscribe.index", "${1:.default}", Array(
 	"SHOW_COUNT" => "${2:N}",		// Показывать количество подписчиков
 	"SHOW_HIDDEN" => "${3:N}",		// Показать скрытые рубрики подписки
-	"PAGE" => "${4:#SITE_DIR#personal/subscribe/subscr_edit.php}",		// Страница редактирования подписки (доступен макрос #SITE_DIR#)
+	"PAGE" => "${4:#SITE_DIR#about/subscr_edit.php}",		// Страница редактирования подписки (доступен макрос #SITE_DIR#)
 	"CACHE_TYPE" => "${5:A}",		// Тип кеширования
 	"CACHE_TIME" => "${6:3600}",		// Время кеширования (сек.)
 	"CACHE_NOTES" => "${7:}",		// 
@@ -13,6 +13,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_subscribe_index</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix subscribe.index</description>
 </snippet>

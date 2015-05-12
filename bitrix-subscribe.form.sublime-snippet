@@ -2,7 +2,7 @@
   <content><![CDATA[
 <?\$APPLICATION->IncludeComponent("bitrix:subscribe.form", "${1:.default}", Array(
 	"USE_PERSONALIZATION" => "${2:Y}",		// Определять подписку текущего пользователя
-	"PAGE" => "${3:#SITE_DIR#personal/subscribe/subscr_edit.php}",		// Страница редактирования подписки (доступен макрос #SITE_DIR#)
+	"PAGE" => "${3:#SITE_DIR#about/subscr_edit.php}",		// Страница редактирования подписки (доступен макрос #SITE_DIR#)
 	"SHOW_HIDDEN" => "${4:N}",		// Показать скрытые рубрики подписки
 	"CACHE_TYPE" => "${5:A}",		// Тип кеширования
 	"CACHE_TIME" => "${6:3600}",		// Время кеширования (сек.)
@@ -12,6 +12,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_subscribe_form</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix subscribe.form</description>
 </snippet>

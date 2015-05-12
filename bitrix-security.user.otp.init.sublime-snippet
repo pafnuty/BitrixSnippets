@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:security.user.otp.init", "${1:.default}", Array(
+	"SUCCESSFUL_URL" => "${2:/}",		// Путь для перенаправления после успешного подключения устройства
+	"SHOW_DESCRIPTION" => "${3:Y}",		// Отображать описание
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_security_user_otp_init</tabTrigger>
+<description>Bitrix security.user.otp.init</description>
+</snippet>

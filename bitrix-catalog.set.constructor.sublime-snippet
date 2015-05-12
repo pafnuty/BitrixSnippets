@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.set.constructor", "${1:.default}", Array(
+	"IBLOCK_TYPE_ID" => "${2:}",		// Тип инфоблока
+	"IBLOCK_ID" => "${3:}",		// Инфоблок
+	"ELEMENT_ID" => "${4:}",		// ID элемента
+	"BASKET_URL" => "${5:/personal/basket.php}",		// URL, ведущий на страницу с корзиной покупателя
+	"PRICE_CODE" => "${6:}",		// Тип цены
+	"PRICE_VAT_INCLUDE" => "${7:Y}",		// Включать НДС в цену
+	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
+	"CACHE_TIME" => "${9:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${10:}",		// 
+	"CACHE_GROUPS" => "${11:Y}",		// Учитывать права доступа
+	"CONVERT_CURRENCY" => "${12:N}",		// Показывать цены в одной валюте
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_set_constructor</tabTrigger>
+<description>Bitrix catalog.set.constructor</description>
+</snippet>

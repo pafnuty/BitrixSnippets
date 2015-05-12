@@ -9,6 +9,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_breadcrumb</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix breadcrumb</description>
 </snippet>

@@ -10,6 +10,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_main_colorpicker</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix main.colorpicker</description>
 </snippet>

@@ -9,6 +9,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_webservice_server</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix webservice.server</description>
 </snippet>

@@ -11,6 +11,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_subscribe_news</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix subscribe.news</description>
 </snippet>

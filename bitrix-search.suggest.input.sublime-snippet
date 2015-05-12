@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:search.suggest.input", "${1:.default}", Array(
+	"NAME" => "${2:q}",		// Имя поля ввода
+	"VALUE" => "${3:}",		// Содержимое поля ввода
+	"INPUT_SIZE" => "${4:40}",		// Размер поля ввода
+	"DROPDOWN_SIZE" => "${5:10}",		// Размер выпадающего списка
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_search_suggest_input</tabTrigger>
+<description>Bitrix search.suggest.input</description>
+</snippet>

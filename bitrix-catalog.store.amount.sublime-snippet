@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:catalog.store.amount", "${1:.default}", Array(
+	"STORES" => "${2:}",		// Склады
+	"ELEMENT_ID" => "${3:}",		// Товар
+	"ELEMENT_CODE" => "${4:}",		// Код товара
+	"STORE_PATH" => "${5:}",		// URL на страницу, где будет показана детальная информация о складе
+	"USER_FIELDS" => "${6:}",		// Свойства
+	"FIELDS" => "${7:}",		// Поля
+	"SHOW_EMPTY_STORE" => "${8:Y}",		// Отображать склад при отсутствие на нем товара
+	"USE_MIN_AMOUNT" => "${9:Y}",		// Показывать вместо точного количества информацию о достаточности
+	"SHOW_GENERAL_STORE_INFORMATION" => "${10:N}",		// Показывать общую информацию по складам
+	"MAIN_TITLE" => "${11:}",		// Заголовок
+	"CACHE_TYPE" => "${12:A}",		// Тип кеширования
+	"CACHE_TIME" => "${13:36000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${14:}",		// 
+	"MIN_AMOUNT" => "${15:0}",		// Минимальное достаточное количество товара на складе
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_catalog_store_amount</tabTrigger>
+<description>Bitrix catalog.store.amount</description>
+</snippet>

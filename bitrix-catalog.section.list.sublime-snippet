@@ -20,6 +20,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_catalog_section_list</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix catalog.section.list</description>
 </snippet>

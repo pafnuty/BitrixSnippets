@@ -37,6 +37,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_infoportal_element_add_form</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix infoportal.element.add.form</description>
 </snippet>

@@ -13,6 +13,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_map_google_view</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix map.google.view</description>
 </snippet>

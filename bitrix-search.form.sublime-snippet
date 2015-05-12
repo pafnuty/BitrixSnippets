@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:search.form", "${1:.default}", Array(
+	"PAGE" => "${2:#SITE_DIR#search/index.php}",		// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_search_form</tabTrigger>
+<description>Bitrix search.form</description>
+</snippet>

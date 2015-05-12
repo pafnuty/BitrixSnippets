@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:system.auth.initialize", "${1:.default}", Array(
+	"USER_ID" => "${2:user_id}",		// Название переменной, в которой передается ID пользователя
+	"CHECKWORD" => "${3:checkword}",		// Название переменной, в которой передается контрольная строка
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_system_auth_initialize</tabTrigger>
+<description>Bitrix system.auth.initialize</description>
+</snippet>

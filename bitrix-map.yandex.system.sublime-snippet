@@ -13,6 +13,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_map_yandex_system</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix map.yandex.system</description>
 </snippet>

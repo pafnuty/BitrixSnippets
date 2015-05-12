@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:main.calendar.interval", "${1:.default}", Array(
+	"FORM_NAME" => "${2:}",		// Имя формы
+	"SELECT_NAME" => "${3:}",		// Имя выпадающего списка
+	"SELECT_VALUE" => "${4:}",		// Значение выпадающего списка
+	"INPUT_NAME_DAYS" => "${5:}",		// Имя поля дней
+	"INPUT_VALUE_DAYS" => "${6:}",		// Значение поля дней
+	"INPUT_NAME_FROM" => "${7:}",		// Имя первого поля интервала
+	"INPUT_VALUE_FROM" => "${8:}",		// Значение первого поля интервала
+	"INPUT_NAME_TO" => "${9:}",		// Имя второго поля интервала
+	"INPUT_VALUE_TO" => "${10:}",		// Значение второго поля интервала
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_main_calendar_interval</tabTrigger>
+<description>Bitrix main.calendar.interval</description>
+</snippet>

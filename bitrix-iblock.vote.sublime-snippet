@@ -4,17 +4,17 @@
 	"IBLOCK_TYPE" => "${2:}",		// Тип инфоблока
 	"IBLOCK_ID" => "${3:}",		// Инфоблок
 	"ELEMENT_ID" => ${4:\$_REQUEST["ELEMENT_ID"]},		// ID элемента
-	"MAX_VOTE" => "${5:5}",		// Максимальный балл
-	"VOTE_NAMES" => "${6:}",		// Подписи к баллам
-	"SET_STATUS_404" => "${7:N}",		// Устанавливать статус 404, если не найдены элемент или раздел
-	"CACHE_TYPE" => "${8:A}",		// Тип кеширования
-	"CACHE_TIME" => "${9:36000000}",		// Время кеширования (сек.)
-	"CACHE_NOTES" => "${10:}",		// 
+	"ELEMENT_CODE" => ${5:\$_REQUEST["code"]},		// Код элемента
+	"MAX_VOTE" => "${6:5}",		// Максимальный балл
+	"VOTE_NAMES" => "${7:}",		// Подписи к баллам
+	"SET_STATUS_404" => "${8:N}",		// Устанавливать статус 404, если не найдены элемент или раздел
+	"CACHE_TYPE" => "${9:A}",		// Тип кеширования
+	"CACHE_TIME" => "${10:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${11:}",		// 
 	),
 	false
 );?>
 ]]></content>
 <tabTrigger>bx_iblock_vote</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix iblock.vote</description>
 </snippet>

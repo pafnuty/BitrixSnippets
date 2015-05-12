@@ -46,6 +46,5 @@
 );?>
 ]]></content>
 <tabTrigger>bx_player</tabTrigger>
-<!-- <scope>text.html</scope> -->
 <description>Bitrix player</description>
 </snippet>

@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<?\$APPLICATION->IncludeComponent("bitrix:sale.location.selector.system", "${1:.default}", Array(
+	"ENTITY_PRIMARY" => "${2:}",		// ID экземпляра сущности
+	"INPUT_NAME" => "${3:LOCATION}",		// Имя поля ввода
+	"LINK_ENTITY_NAME" => "${4:}",		// Имя класса сущности, включая namespace
+	"ENTITY_VARIABLE_NAME" => "${5:id}",		// Имя переменной в запросе
+	"CACHE_TYPE" => "${6:A}",		// Тип кеширования
+	"CACHE_TIME" => "${7:36000000}",		// Время кеширования (сек.)
+	"CACHE_NOTES" => "${8:}",		// 
+	),
+	false
+);?>
+]]></content>
+<tabTrigger>bx_sale_location_selector_system</tabTrigger>
+<description>Bitrix sale.location.selector.system</description>
+</snippet>
