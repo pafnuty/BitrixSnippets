@@ -1,11 +1,15 @@
 <snippet>
 	<content><![CDATA[
-<?\$APPLICATION->AddHeadScript(${1:SITE_TEMPLATE_PATH.'/js/main.js'}${2:, true})?>
+<?
+	// Правильный способ подключения js, с использованием нового ядра D7
+	use \Bitrix\Main\Page\Asset;
+	Asset::getInstance()->addJs(${1:SITE_TEMPLATE_PATH.'/js/main.js'}${2:, true});
+?>
 ${0}
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>bx_add_head_script</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
-	<description>AddHeadScript</description>
+	<description>AddHeadScript D7</description>
 </snippet>

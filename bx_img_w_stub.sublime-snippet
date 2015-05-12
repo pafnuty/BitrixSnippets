@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+<?	
+	// Определяем title будущей картинки (учитываем настройки SEO-модуля и настройки инфоблока)
+	\$strTitle = (
+		isset(\$${1:arResult}["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_TITLE"]) && \$${1:arResult}["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_TITLE"] != ''
+		? \$${1:arResult}["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_TITLE"]
+		: \$${1:arResult}['NAME']
+	);
+	// Определяем alt будущей картинки (учитываем настройки SEO-модуля и настройки инфоблока)
+	\$strAlt = (
+		isset(\$${1:arResult}["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && \$${1:arResult}["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"] != ''
+		? \$${1:arResult}["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]
+		: \$${1:arResult}['NAME']
+	);
+
+	// Cоздаём массив, отвечающий за картинку по умолчанию, если нет других картинок
+	// Нам нужен только один ключ т.к. остальное уже определено выше
+	\$defImgArray = array(
+		'SRC' => '/local/codenails/images/content/noimage270.png'
+	);
+	\$prewiewImgUrl = (is_array(\$${1:arResult}["PREVIEW_PICTURE"])) ? \$${1:arResult}["PREVIEW_PICTURE"] : \$defImgArray;
+
+?>
+<div <?if (isset(\$${1:arResult}["DETAIL_PICTURE"]["SRC"])):?>class="image-popup" data-mfp-src="<?=\$${1:arResult}["DETAIL_PICTURE"]["SRC"]?>"<?endif?> title="<?=\$strTitle?>"><img src="<?=\$prewiewImgUrl['SRC']?>" alt="<?=\$strAlt?>"></div>
+${0}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_img_w_stub</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Картинка с заглушкой для шаблона компонента.</description>
+</snippet>

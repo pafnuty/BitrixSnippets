@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+<?
+/**
+ * Правильный ресайз картинок, загруженных как допсвойство в инфоблок
+ */
+?>
+<?if (array_key_exists("SRC", \$arResult["DISPLAY_PROPERTIES"]["${1:MORE_PHOTO}"]["FILE_VALUE"])):?>
+	<?\$file = CFile::ResizeImageGet(\$arResult["DISPLAY_PROPERTIES"]["${1:MORE_PHOTO}"]["FILE_VALUE"], array('width'=>270, 'height'=>270), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, true);?>
+	<?if (\$arResult["DISPLAY_PROPERTIES"]["${1:MORE_PHOTO}"]["FILE_VALUE"]["DESCRIPTION"]): ?>
+		<?\$morePhotoAlt = \$morePhototitle = \$arResult["DISPLAY_PROPERTIES"]["${1:MORE_PHOTO}"]["FILE_VALUE"]["DESCRIPTION"];?>
+	<?else:?>
+		<?\$morePhotoAlt = \$morePhototitle = \$arResult['NAME']?>
+	<?endif?>
+	<div class="image-popup" data-mfp-src="<?=\$arResult["DISPLAY_PROPERTIES"]["${1:MORE_PHOTO}"]["FILE_VALUE"]["SRC"]?>" title="<?=\$morePhototitle?>"><img src="<?=\$file["src"]?>" alt="<?=\$morePhotoAlt?>"></div>
+<?else:?>
+	<?foreach (\$arResult["DISPLAY_PROPERTIES"]["${1:MORE_PHOTO}"]["FILE_VALUE"] as \$key => \$value): ?>
+		<?
+		\$file = CFile::ResizeImageGet(\$value, array('width'=>270, 'height'=>270), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, true);
+		?>
+		<?if (\$value["DESCRIPTION"]): ?>
+			<?\$morePhotoAlt = \$morePhototitle = \$value["DESCRIPTION"];?>
+		<?else:?>
+			<?\$morePhotoAlt = \$morePhototitle = \$arResult['NAME']?>
+		<?endif?>
+		<div class="image-popup" data-mfp-src="<?=\$value["SRC"]?>" title="<?=\$morePhototitle?>"><img src="<?=\$file["src"]?>" alt="<?=\$morePhotoAlt?>"></div>
+	<?endforeach ?>		
+<?endif;?>
+\${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_resize_more_photo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Ресайз MORE_PHOTO</description>
+</snippet>

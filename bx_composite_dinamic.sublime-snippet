@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<?
+	\$${1:frame} = \$this->createFrame()->begin('');
+	${2:\$${1:frame}->setAnimation(true);}
+?>
+${3:динамический контент}
+<?\$${1:frame}->end();?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bx_composite_dinamic</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Вставка динамической области</description>
+</snippet>
