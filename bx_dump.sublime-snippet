@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+<?dump(\$${1:arResult}, '${2:-s}');${3:
+	// dump();
+	// dump(1);
+	// dump(false);
+	// dump(debug_backtrace());
+
+	// dump(\$${1:arResult});
+	// dump(\$${1:arResult}, '-d');
+	// dump(\$${1:arResult}, '~d');
+	// dump(\$${1:arResult}, '!d');
+
+	// dump(\$${1:arResult}, 's');
+	// dump(\$${1:arResult}, '-s');
+	// dump(\$${1:arResult}, '~s');
+	// dump(\$${1:arResult}, '!s');
+
+	// dump(\$${1:arResult}, 'ddd');
+	// dump(\$${1:arResult}, '-ddd');
+	// dump(\$${1:arResult}, '~ddd');
+	// dump(\$${1:arResult}, '!ddd');
+
+	// dump(\$${1:arResult}, 'sd');
+	// dump(\$${1:arResult}, '-sd');
+	// dump(\$${1:arResult}, '~sd');
+	// dump(\$${1:arResult}, '!sd');}?>
+${0}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dump</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>Вывод отладки через Kint</description>
+</snippet>

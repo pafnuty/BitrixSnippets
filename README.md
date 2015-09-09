@@ -184,27 +184,68 @@ function runFunction() {
  * Правильный ресайз картинок, загруженных как допсвойство в инфоблок
  */
 ?>
-<?if (array_key_exists("SRC", $arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"])):?>
-    <?$file = CFile::ResizeImageGet($arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"], array('width'=>270, 'height'=>270), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, true);?>
-    <?if ($arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"]["DESCRIPTION"]): ?>
-        <?$morePhotoAlt = $morePhototitle = $arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"]["DESCRIPTION"];?>
-    <?else:?>
-        <?$morePhotoAlt = $morePhototitle = $arResult['NAME']?>
-    <?endif?>
-    <div class="image-popup" data-mfp-src="<?=$arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"]["SRC"]?>" title="<?=$morePhototitle?>"><img src="<?=$file["src"]?>" alt="<?=$morePhotoAlt?>"></div>
-<?else:?>
-    <?foreach ($arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"] as $key => $value): ?>
-        <?
-        $file = CFile::ResizeImageGet($value, array('width'=>270, 'height'=>270), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, true);
-        ?>
-        <?if ($value["DESCRIPTION"]): ?>
-            <?$morePhotoAlt = $morePhototitle = $value["DESCRIPTION"];?>
-        <?else:?>
-            <?$morePhotoAlt = $morePhototitle = $arResult['NAME']?>
-        <?endif?>
-        <div class="image-popup" data-mfp-src="<?=$value["SRC"]?>" title="<?=$morePhototitle?>"><img src="<?=$file["src"]?>" alt="<?=$morePhotoAlt?>"></div>
-    <?endforeach ?>        
-<?endif;?>
+<?
+    $arMorePhoto = array();
+    if (array_key_exists("SRC", $arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"])) {
+        $arMorePhoto[] = $arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"];
+    } else {
+        $arMorePhoto = $arResult["DISPLAY_PROPERTIES"]["MORE_PHOTO"]["FILE_VALUE"];
+    }
+?>
+<?if (count($arMorePhoto) > 0):?>
+    <div class="col col-5">
+        <div class="content">
+            <?foreach ($arMorePhoto as $key => $value):?>
+                <?
+                    $file = CFile::ResizeImageGet($value, array('width'=>185, 'height'=>185), BX_RESIZE_IMAGE_PROPORTIONAL_ALT, true);
+                ?>
+                <?if ($value["DESCRIPTION"]): ?>
+                    <?$morePhotoAlt = $morePhototitle = $value["DESCRIPTION"];?>
+                <?else:?>
+                    <?$morePhotoAlt = $morePhototitle = $arResult['NAME']?>
+                <?endif?>
+                <div class="col col-6 col-margin-bottom">
+                    <img 
+                        src="<?=$file["src"]?>"
+                        alt="<?=$morePhotoAlt?>"
+                        data-mfp-src="<?=$value["SRC"]?>"
+                        title="<?=$morePhototitle?>"
+                        class="image-open pseudolink"
+                    >
+                </div>
+            <?endforeach?>    
+        </div>
+    </div> <!-- .col col-5 -->
+<?endif?>
+```
+
+*dump*
+```
+<?dump($arResult, '-s');
+    // dump();
+    // dump(1);
+    // dump(false);
+    // dump(debug_backtrace());
+
+    // dump($arResult);
+    // dump($arResult, '-d');
+    // dump($arResult, '~d');
+    // dump($arResult, '!d');
+
+    // dump($arResult, 's');
+    // dump($arResult, '-s');
+    // dump($arResult, '~s');
+    // dump($arResult, '!s');
+
+    // dump($arResult, 'ddd');
+    // dump($arResult, '-ddd');
+    // dump($arResult, '~ddd');
+    // dump($arResult, '!ddd');
+
+    // dump($arResult, 'sd');
+    // dump($arResult, '-sd');
+    // dump($arResult, '~sd');
+    // dump($arResult, '!sd');?>
 
 ```
 
