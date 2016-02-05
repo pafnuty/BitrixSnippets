@@ -120,13 +120,13 @@ $('.popup-image').magnificPopup({
 *bx_composite_js*
 ``` javascript
 if (window.frameCacheVars !== undefined) {
-    BX.addCustomEvent('onFrameDataReceived', 'runFunction');
+    BX.addCustomEvent('onFrameDataReceived', mainFunction);
 }
 else {
-    $(runFunction);
+    $(mainFunction);
 }
 
-function runFunction() {
+function mainFunction() {
     console.log('go-go-go');
 }
 ```

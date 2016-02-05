@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 if (window.frameCacheVars !== undefined) {
-	BX.addCustomEvent('onFrameDataReceived', '${1:mainFunction}');
+	BX.addCustomEvent('onFrameDataReceived', ${1:mainFunction});
 }
 else {
 	\$(${1:mainFunction});
