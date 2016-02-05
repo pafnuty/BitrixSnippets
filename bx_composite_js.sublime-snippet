@@ -1,17 +1,15 @@
 <snippet>
 	<content><![CDATA[
 if (window.frameCacheVars !== undefined) {
-	BX.addCustomEvent("onFrameDataReceived", function (json) {
-		runFunction();
-	});
+	BX.addCustomEvent('onFrameDataReceived', '${1:mainFunction}');
 }
 else {
-	jQuery(document).ready(function (\$) {
-		runFunction();
-	});
+	\$(${1:mainFunction});
 }
-
-function runFunction() {
+/**
+ * ${1:mainFunction} description
+ */
+function ${1:mainFunction}() {
 	${0:console.log('go-go-go');}
 }
 ]]></content>
